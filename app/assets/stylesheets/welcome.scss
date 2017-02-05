@@ -6,6 +6,11 @@
   
 }
 
+.service_icon {
+  width: 110px;
+  opacity: 1;
+}
+
 .mockup_header {
   width: 100%;
 }
@@ -110,21 +115,28 @@
 }
 
 #services_section {
-  background-color: DarkOrange;
+  background: gray;
+  opacity: 0.5;
 }
 
 #about_us_section {
-  background-color: DarkBlue;
+  background: LightGray;
 }
 
 #projects_section {
-  background-color: DarkOrange;
+  background: gray;
+  opacity: 0.5;
 }
 
 #clients_section {
-  background-color: DarkBlue;
+  background: LightGray;
 }
 
-#contact_us_section { 
-  background-color: DarkOrange;
+#contact_us_section {
+  background: gray;
+}
+
+#services_section_container {
+  position: absolute;
+  top: 1350px;
 }

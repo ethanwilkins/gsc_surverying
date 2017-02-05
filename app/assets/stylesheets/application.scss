@@ -39,11 +39,14 @@
 
 html {
 	font-family: Helvetica;
-	background: LightGray;
 }
 
 body {
   margin: 0;
+  background-image: url("/images/map.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 a {
