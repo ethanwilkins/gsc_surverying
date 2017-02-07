@@ -123,16 +123,3 @@ GSC Surveying, Inc. offers services in both Virginia and North Carolina and is a
 
   <div class="google_maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.7142925526628!2d-78.63260468473706!3d35.83148498015967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac58ea71c6eb91%3A0x6b3df7bae78983ea!2sGSC+Surveying+Inc!5e0!3m2!1sen!2sus!4v1485914436090" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 </div>
-
-<div align="center">
-  <div align="center">
-    <% unless current_user %>
-      <p><%= link_to "Register", new_user_path, class: :white_link %></p>
-      <p><%= link_to "Log in", sessions_new_path, class: :white_link %></p>
-    <% else %>
-      <p class="welcome_text">You are signed in.</p>
-      <p class="welcome_text">Welcome, <%= current_user.name %>!</p>
-      <%= link_to "Log out", sessions_destroy_path, method: :delete, class: :white_link %>
-    <% end %>
-  </div>
-</div>
