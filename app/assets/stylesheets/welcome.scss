@@ -2,7 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@media screen and (max-width: 975px) {}
+@media screen and (max-width: 975px) {
+  .about_us_text_1 {
+    font-size: 14px;
+  }
+}
 
 .service_icon {
   width: 110px;
