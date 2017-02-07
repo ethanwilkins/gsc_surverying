@@ -12,6 +12,17 @@
       </div>
     <% end %>
   <% end %>
+  
+  <% if current_user %>
+    <div class="signed_in_as">
+      <div>
+        Signed in as <%= current_user.name %>
+      </div>
+      <div>
+        <%= link_to "Log out", sessions_destroy_path, method: :delete, data: { confirm: "Are you sure?" } %>
+      </div>
+    </div>
+  <% end %>
 </div>
 
 <div class="nav_spacing"></div>
