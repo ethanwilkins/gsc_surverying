@@ -1,4 +1,32 @@
 class PostsController < ApplicationController
+  before_action :set_post, only: [:update]
+  
+  def new
+    @post = Post.new
+  end
+  
+  def create
+    @post = Post.new(post_params)
+    @post.user_id = current_user.id
+    if @post.save
+      redirect_to root_url
+    else
+      redirect_to :back
+    end
+  end
+  
+  def edit
+    @post = Post.find_by_tag params[:tag]
+  end
+  
+  def update
+    if @post.update(post_params)
+      redirect_to root_url
+    else
+      redirect_to :back
+    end
+  end
+  
   def carousel_scroll
     @carousel_size = 4
     @direction = params[:direction]
@@ -28,21 +56,11 @@ class PostsController < ApplicationController
     end
   end
   
-  def new
-    @post = Post.new
-  end
-  
-  def create
-    @post = Post.new(post_params)
-    @post.user_id = current_user.id
-    if @post.save
-      redirect_to root_url
-    else
-      redirect_to :back
-    end
-  end
-  
   private
+  
+  def set_post
+    @post = Post.find params[:id]
+  end
   
   def post_params
     params.require(:post).permit(:body, :image, :tag)
