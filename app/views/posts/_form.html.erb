@@ -1,12 +1,15 @@
 <div class="card">
   <%= form_for(@post) do |f| %>
-
     <div align="center">
       <p>
         <%= f.text_area :body, placeholder: "Write your text here..." %>
       </p>
 	    
 		  Attach an image: <%= f.file_field :image %>
+		  
+      <p>
+        <%= f.text_field :tag, placeholder: "Tag text or image to a particular location...", class: :standard_text_field %>
+      </p>
 		  
 	    <p>
         <button type="submit" name="commit" class="standard_form_button">

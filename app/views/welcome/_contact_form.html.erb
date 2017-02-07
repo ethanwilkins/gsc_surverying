@@ -1,0 +1,35 @@
+<div class="card">
+  <%= form_tag contact_path do %>
+    <div align="center">
+      <p>
+        <%= text_field_tag :name, nil, placeholder: "Name", class: :standard_text_field %>
+      </p>
+      <p>
+        <%= text_field_tag :organization, nil, placeholder: "Organization", class: :standard_text_field %>
+      </p>
+      <p>
+        <%= text_field_tag :work_phone, nil, placeholder: "Work phone", class: :standard_text_field %>
+      </p>
+      <p>
+        <%= text_field_tag :home_phone, nil, placeholder: "Home phone", class: :standard_text_field %>
+      </p>
+      <p>
+        <%= text_field_tag :fax, nil, placeholder: "Fax", class: :standard_text_field %>
+      </p>
+      <p>
+        <%= text_field_tag :email, nil, placeholder: "E-mail", class: :standard_text_field %>
+      </p>
+      <p>
+        <%= text_field_tag :url, nil, placeholder: "URL", class: :standard_text_field %>
+      </p>
+      <p>
+        <%= text_area_tag :comments, nil, placeholder: "Comments" %>
+      </p>
+	    <p>
+        <button type="submit" name="commit" class="standard_form_button">
+	        <b>Submit <i class="fa fa-pencil"></i></b>
+        </button>
+      </p>
+    </div>
+  <% end %>
+</div>
