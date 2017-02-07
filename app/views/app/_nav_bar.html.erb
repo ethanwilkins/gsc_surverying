@@ -18,7 +18,7 @@
       <div>
         Signed in as <%= current_user.name %>
       </div>
-      <div>
+      <div class="log_out_nav_link">
         <%= link_to "Log out", sessions_destroy_path, method: :delete, data: { confirm: "Are you sure?" } %>
       </div>
     </div>
