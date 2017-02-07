@@ -17,6 +17,7 @@ class PostsController < ApplicationController
   
   def edit
     @post = Post.find_by_tag params[:tag]
+    @editing = true
   end
   
   def update

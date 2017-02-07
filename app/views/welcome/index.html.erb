@@ -1,4 +1,8 @@
-<%= image_tag "map.jpg", width: "100%" %>
+<%= image_tag Post.find_by_tag("cover_image").image, width: "100%" %>
+
+<% if current_user and current_user.admin %>
+  <%= link_to "Edit cover image", edit_post_path("cover_image"), class: :edit_cover_image_link %>
+<% end %>
 
 <div class="section_part" id="services_section">
 </div>

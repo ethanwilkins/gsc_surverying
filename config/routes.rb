@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   
   # posts
   get 'carousel_scroll/:direction', to: 'posts#carousel_scroll', as: 'carousel_scroll'
+  get 'edit_post/:tag', to: 'posts#edit', as: 'edit_post'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

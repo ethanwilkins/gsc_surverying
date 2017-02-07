@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.edit_cover_image_link {
+  position: absolute;
+  top: 85px;
+  right: 15px;
+}
+
 .image_carousel {
   position: relative;
   background: white;
