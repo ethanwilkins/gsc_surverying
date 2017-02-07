@@ -2,9 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.about_us_text_1 {
+  font-size: 30px;
+  max-width: 1000px;
+  color: DarkBlue;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 975px) {
   .about_us_text_1 {
     font-size: 14px;
+    color: DarkBlue;
+    font-weight: bold;
+    width: 90%
   }
 }
 
@@ -141,13 +151,6 @@
 }
 
 .div2_about {}
-
-.about_us_text_1 {
-  font-size: 30px;
-  max-width: 1000px;
-  color: darkblue;
-  font-weight: bold;
-}
 
 #projects_section {
   background: gray;
