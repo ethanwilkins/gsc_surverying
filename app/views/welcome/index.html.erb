@@ -1,5 +1,5 @@
 <% if Post.find_by_tag("cover_image") %>
-  <%= image_tag Post.find_by_tag("cover_image").image, width: "100%" %>
+  <%= image_tag Post.find_by_tag("cover_image").image, class: :cover_image %>
 <% end %>
 
 <% if current_user and current_user.admin %>
