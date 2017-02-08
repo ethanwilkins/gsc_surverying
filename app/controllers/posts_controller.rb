@@ -17,6 +17,9 @@ class PostsController < ApplicationController
   
   def edit
     @post = Post.find_by_tag params[:tag]
+    unless @post
+      Post.create body: "[placeholder text]", tag: params[:tag]
+    end
     @editing = true
   end
   
