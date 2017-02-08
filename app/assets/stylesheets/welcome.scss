@@ -129,15 +129,6 @@
   position: relative;
 }
 
-#services_section {
-  background: gray;
-  opacity: 0.5;
-}
-
-#about_us_section {
-  background: LightGray;
-}
-
 .section_part_about {
   width: 100%;
   height: 1150px;
@@ -147,22 +138,36 @@
 }
 
 .div1_about {
-  padding-top: 22px;
 }
 
 .div2_about {}
 
+#services_section {
+  background: gray;
+}
+
+#about_us_section {
+  background: LightGray;
+  opacity: 0.5;
+}
+
 #projects_section {
   background: gray;
-  opacity: 0.5;
 }
 
 #clients_section {
   background: LightGray;
+  opacity: 0.5;
 }
 
 #contact_us_section {
   background: gray;
+}
+
+#about_us_section_container {
+  position: absolute;
+  top: 1250px;
+  left: 150px;
 }
 
 #services_section_container {
