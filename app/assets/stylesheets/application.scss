@@ -71,15 +71,6 @@ textarea {
 	font-size: 12.5px;
 }
 
-@media screen and (max-width: 975px) {
-  .nav_bar {
-    visibility: hidden;
-  }
-  .nav_menu {
-    visibility: visible;
-  }
-}
-
 .nav_bar {
   position: fixed;
   background: white;
@@ -191,4 +182,13 @@ textarea {
 
 .spacing {
   padding-bottom: 25px;
+}
+
+@media screen and (max-width: 975px) {
+  .nav_bar {
+    visibility: hidden;
+  }
+  .nav_menu {
+    visibility: visible;
+  }
 }

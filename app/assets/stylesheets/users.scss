@@ -2,8 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@media screen and (max-width: 975px) {}
-
 .signed_in_as {
   position: fixed;
   top: 15px;
@@ -15,3 +13,5 @@
   left: 91.5px;
   top: 5px;
 }
+
+@media screen and (max-width: 975px) {}
