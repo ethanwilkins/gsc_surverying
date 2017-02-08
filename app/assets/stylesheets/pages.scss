@@ -13,11 +13,12 @@
 }
 
 .standard_nav_menu_link {
-	color: black;
+	color: white;
 	font-size: 25px;
 	display: block;
 	padding: 7.5px 5px;
-	background: white;
+	background: DarkBlue;
+	border-bottom: 2px solid blue;
 }
 
 #menu_link_container {
