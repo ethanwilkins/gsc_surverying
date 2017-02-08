@@ -1,10 +1,7 @@
 <% if Post.find_by_tag("cover_image") %>
   <%= image_tag Post.find_by_tag("cover_image").image, class: :cover_image %>
 <% end %>
-
-<% if current_user and current_user.admin %>
-  <%= link_to "Edit cover image", edit_post_path("cover_image"), class: :edit_cover_image_link %>
-<% end %>
+<%= link_to "Edit cover image", edit_post_path("cover_image"), class: :edit_cover_image_link if admin? %>
 
 <div class="section_part" id="about_us_section">
   <center>
