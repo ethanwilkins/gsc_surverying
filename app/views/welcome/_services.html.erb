@@ -1,24 +1,51 @@
 <div class="section_part" id="services_section">
-  <div class="services_img_container">
-    <%= image_tag(post_img("contruction_3d_img")), class: :services_img %>
-  </div>
-  <div class="services_img_container">
-    <%= image_tag(post_img("contruction_3d_img")), class: :services_img %>
-  </div>
-  <div class="services_img_container">
-    <%= image_tag(post_img("contruction_3d_img")), class: :services_img %>
-  </div>
-  <div class="services_img_container">
-    <%= image_tag(post_img("contruction_3d_img")), class: :services_img %>
-  </div>
-  <div class="services_img_container">
-    <%= image_tag(post_img("contruction_3d_img")), class: :services_img %>
-  </div>
-  <div class="services_img_container">
-    <%= image_tag(post_img("contruction_3d_img")), class: :services_img %>
-  </div>
-  <div class="services_img_container">
-    <%= image_tag(post_img("contruction_3d_img")), class: :services_img %>
-  </div>
+  <%= link_to root_url do %>
+    <div class="services_img_container">
+      <%= image_tag post_img("contruction_3d_img"), class: :services_img %>
+      <div class="services_img_txt">
+        Construction
+      </div>
+    </div>
+  <% end %>
+  <%= link_to root_url do %>
+    <div class="services_img_container">
+      <%= image_tag post_img("contruction_3d_img"), class: :services_img %>
+      <div class="services_img_txt">
+        3D Modeling
+      </div>
+    </div>
+  <% end %>
+  <%= link_to root_url do %>
+    <div class="services_img_container">
+      <%= image_tag post_img("contruction_3d_img"), class: :services_img %>
+      <div class="services_img_txt">
+        Onsite Technical Support on GPS Machine Control
+      </div>
+    </div>
+  <% end %>
+  <%= link_to root_url do %>
+    <div class="services_img_container">
+      <%= image_tag post_img("contruction_3d_img"), class: :services_img %>
+      <div class="services_img_txt">
+        Topographic Surveying
+      </div>
+    </div>
+  <% end %>
+  <%= link_to root_url do %>
+    <div class="services_img_container">
+      <%= image_tag post_img("contruction_3d_img"), class: :services_img %>
+      <div class="services_img_txt">
+        Horizontal and Vertical Control Surveys
+      </div>
+    </div>
+  <% end %>
+  <%= link_to root_url do %>
+    <div class="services_img_container">
+      <%= image_tag post_img("contruction_3d_img"), class: :services_img %>
+      <div class="services_img_txt">
+        Location Surveys for Engineering and Design
+      </div>
+    </div>
+  <% end %>
 </div>
 <div class="section_spacer"></div>
