@@ -11,6 +11,8 @@ class UsersController < ApplicationController
   
   def create
     @user = User.new(user_params)
+    # first user created is admin by default
+    @user.admin = true if User.all.size.zero?
     if @user.save
       if params[:remember_me]
         cookies.permanent[:auth_token] = @user.auth_token
