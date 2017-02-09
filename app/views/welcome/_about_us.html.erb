@@ -1,0 +1,15 @@
+<div class="section_part" id="about_us_section">
+  <center>
+    <div class= "div1_about">
+      <p class="about_us_text_1 justified_body_text">
+        <%= post_text("about_us_p1") %> <%= link_to "Edit", edit_post_path("about_us_p1") if admin? %>
+      </p>
+    </div>
+    <div class= "div2_about">
+      <p class="about_us_text_1 justified_body_text">
+        <%= post_text("about_us_p2") %> <%= link_to "Edit", edit_post_path("about_us_p2") if admin? %>
+      </p>
+    </div>
+  </center>
+</div>
+<div class="section_spacer"></div>
