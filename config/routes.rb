@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'focus_to_section/:section_id', to: 'welcome#focus_to_section', as: 'focus_to_section'
   get 'scroll_to_top', to: 'welcome#scroll_to_top', as: 'scroll_to_top'
   post 'contact', to: 'welcome#contact', as: 'contact'
+  get 'services_dialog/:service', to: 'welcome#services_dialog', as: 'services_dialog'
   
   # posts
   get 'carousel_scroll/:direction', to: 'posts#carousel_scroll', as: 'carousel_scroll'

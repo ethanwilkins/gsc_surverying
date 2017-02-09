@@ -4,6 +4,10 @@ class WelcomeController < ApplicationController
     cookies[:carousel_index] = 0
   end
   
+  def services_dialog
+    @service = params[:service]
+  end
+  
   def scroll_to_top
   end
   
