@@ -1,14 +1,18 @@
-<% case @section.to_i %>
-  <% when 1 %>
-    
-  <% when 2 %>
-    
-  <% when 3 %>
-    
-  <% when 4 %>
-    
-  <% when 5 %>
-    
-  <% when 6 %>
-    
-<% end %>
+<div class="dialog_modal">
+  <div class="dialog_text">
+    <% case @section.to_i %>
+      <% when 1 %>
+        Test of 1
+      <% when 2 %>
+        Test of 2
+      <% when 3 %>
+        Test of 3
+      <% when 4 %>
+        Test of 4
+      <% when 5 %>
+        Test of 5
+      <% when 6 %>
+        Test of 6
+    <% end %>
+  </div>
+</div>
