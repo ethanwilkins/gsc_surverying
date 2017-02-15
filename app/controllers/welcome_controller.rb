@@ -5,7 +5,6 @@ class WelcomeController < ApplicationController
   end
   
   def services_dialog
-    puts "SECTION HERE: " + params[:service]
     @service = params[:service].to_i
   end
   
