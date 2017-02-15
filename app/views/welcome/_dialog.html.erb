@@ -1,6 +1,6 @@
 <div class="dialog_modal">
-  <div class="dialog_text">
-    <% case @section %>
+  <div class="dialog_text" align="center">
+    <% case service %>
       <% when 1 %>
         Test of 1
       <% when 2 %>
@@ -14,6 +14,7 @@
       <% when 6 %>
         Test of 6
       <% else %>
+        <% puts "\nSECTION: " + service.to_s %>
         Test of fail!
     <% end %>
   </div>
