@@ -1,20 +1,91 @@
-<div class="dialog_modal">
+<div class="dialog_modal" id="dialog_modal">
+  <%= link_to "X", close_dialog_path, remote: true, class: :close_dialog_link %>
   <div class="dialog_text" align="center">
     <% case service %>
       <% when 1 %>
-        Test of 1
+        <div>
+          Construction layout for clearing limits, slope staking, fine grading, pipe, drainage structures, bridges, MSE walls, retaining walls, box culverts, storm water management ponds, building pads, Right-of-Way Monuments, controlled access fencing, etc.
+        </div>
+        <div>
+          Construction projects for NCDOT and VDOT new locations, design builds, and urban widening
+        </div>
+        <div>
+          Large commercial site complexes, warehouses, and parking lots
+        </div>
+        <div>
+          Bridge layouts, new construction, and replacements
+        </div>
+        <div>
+          Building construction for schools, shopping centers, and manufacturing plants
+        </div>
+        <div>
+          Subdivisions
+        </div>
+        <div>
+          Airports
+        </div>
+        <div>
+          Dams/Lakes/Ponds
+        </div>
       <% when 2 %>
-        Test of 2
+        <div>
+          3D Modeling for use with the GPS Machine Control on Highway and Commercial Sites
+        </div>
+        <div>
+          Digital Terrain Models (DTM) for mass hauling and fine grading using most up-to-date modeling
+        </div>
+        <div>
+          Color coded line-work of Edge of Pavements, Curb & Gutter, Pipe, Drainage Structures, Utilities, etc.
+        </div>
+        <div>
+          Create Cut/Fill Maps for Pipe and Utility Depths
+        </div>
       <% when 3 %>
-        Test of 3
+        <div>
+          Setup of initial control network
+        </div>
+        <div>
+          Setup of control for millimeter GPS
+        </div>
+        <div>
+          Periodic checks for quality control throughout duration of project
+        </div>
+        <div>
+          Supply original ground topography for accurate quantities and final results
+        </div>
+        <div>
+          Provide intermediate surveys for progress payments and checks on production
+        </div>
       <% when 4 %>
-        Test of 4
+        <div>
+          Preliminary engineering projects
+        </div>
+        <div>
+          Quantity calculations on construction projects
+        </div>
+        <div>
+          Borrow pit surveys
+        </div>
       <% when 5 %>
-        Test of 5
+        <div>
+          Arial photography
+        </div>
+        <div>
+          Highway and commercial sites
+        </div>
+        <div>
+          3D machine control
+        </div>
       <% when 6 %>
-        Test of 6
-      <% else %>
-        Test of fail!
+        <div>
+          As-built surveys
+        </div>
+        <div>
+          ALTA Land Title Surveys
+        </div>
+        <div>
+          Boundary surveys
+        </div>
     <% end %>
   </div>
 </div>

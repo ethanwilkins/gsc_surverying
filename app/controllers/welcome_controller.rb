@@ -4,6 +4,9 @@ class WelcomeController < ApplicationController
     cookies[:carousel_index] = 0
   end
   
+  def close_dialog
+  end
+  
   def services_dialog
     @service = params[:service].to_i
   end
