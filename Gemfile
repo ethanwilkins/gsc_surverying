@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# for styling and easier basic components
+gem 'twitter-bootstrap-rails'
+
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 gem 'gpgme'

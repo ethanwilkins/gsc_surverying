@@ -1,6 +1,6 @@
 <div class="dialog_modal">
   <div class="dialog_text">
-    <% case @section.to_i %>
+    <% case @section %>
       <% when 1 %>
         Test of 1
       <% when 2 %>
@@ -13,6 +13,8 @@
         Test of 5
       <% when 6 %>
         Test of 6
+      <% else %>
+        Test of fail!
     <% end %>
   </div>
 </div>

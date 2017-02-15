@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
   end
   
   def services_dialog
-    @service = params[:service]
+    @service = params[:service].to_i
   end
   
   def scroll_to_top
