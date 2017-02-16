@@ -1,6 +1,6 @@
 <div class="dialog_modal" id="dialog_modal">
-  <%= link_to "X", close_dialog_path, remote: true, class: :close_dialog_link %>
-  <div class="dialog_text" align="center">
+  <div class="card" align="center">
+    <%= link_to '<i class="fa fa-times"></i>'.html_safe, close_dialog_path, remote: true, class: :top_right_link %>
     <% case service %>
       <% when 1 %>
         <div>

@@ -1,34 +1,38 @@
-<div class="section_part" id="contact_us_section">
-  <div class="company_emails">
-    <p style= font-size:18px;>
-      Greg S. Crowder, President
-      Registered Land Surveyor
-      greg@gscsurveying.com
-
-      Benjamin Andrews
-      ben@gscsurveying.com
-
-      Austin McCleery
-      austin@gscsurveying.com
-
-      Liz Carpenter Bayer, Office Manager
-      liz@gscsurveying.com
-    </p>
-  </div>
-  <div class= "facebook_icon">
+<div class="section_part_contact_us" id="contact_us_section">
+  <%= render "welcome/contact_form" %>
+  
+  <div class= "wrapper_contacts"> 
+  <div class= "facebook_icon" >
     <%= link_to "http://www.facebook.com" do %>
-      <%= image_tag "icons/facebook.png", width: "40%" %>
+      <%= image_tag "icons/facebook.png", width: "70%" %>
     <% end %>
   </div>
   <div class="twitter_icon">
     <%= link_to "http://www.twitter.com" do %>
-      <%= image_tag "icons/twitter.png", width: "40%" %>
+      <%= image_tag "icons/twitter.png", width: "70%" %>
     <% end %>
   </div>
   <div class="instagram_icon">
     <%= link_to "http://www.instagram.com" do %>
-      <%= image_tag "icons/instagram.png", width: "40%" %>
+      <%= image_tag "icons/instagram.png", width: "70%" %>
     <% end %>
+  </div> <div class="company_emails">
+    <p style= font-size:25px;>
+      Greg S. Crowder, President
+      Registered Land Surveyor
+      greg@gscsurveying.com
+</br>
+      Benjamin Andrews
+      ben@gscsurveying.com
+</br>
+      Austin McCleery
+      austin@gscsurveying.com
+</br>
+      Liz Carpenter Bayer, Office Manager
+      liz@gscsurveying.com
+    </p>
+  </div>
   </div>
   <div class="google_maps"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.7142925526628!2d-78.63260468473706!3d35.83148498015967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac58ea71c6eb91%3A0x6b3df7bae78983ea!2sGSC+Surveying+Inc!5e0!3m2!1sen!2sus!4v1485914436090" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 </div>
+<div class="section_spacer"></div>

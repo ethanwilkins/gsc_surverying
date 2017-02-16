@@ -1,4 +1,4 @@
-<div class="card">
+<div class="contact_form">
   <%= form_tag contact_path do %>
     <div align="center">
       <p>
@@ -23,7 +23,7 @@
         <%= text_field_tag :url, nil, placeholder: "URL", class: :standard_text_field %>
       </p>
       <p>
-        <%= text_area_tag :comments, nil, placeholder: "Comments" %>
+        <%= text_area_tag :comments, nil, placeholder: "Comments", class: :standard_text_field %>
       </p>
 	    <p>
         <button type="submit" name="commit" class="standard_form_button">
