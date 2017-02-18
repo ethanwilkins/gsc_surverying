@@ -22,7 +22,7 @@ class WelcomeController < ApplicationController
   def contact
     @contact = Contact.new(contact_params)
     if @contact.save
-      ContactMailer.contact_email(@contact).deliver_now
+      ContactMailer.contact_email(@contact).deliver
       redirect_to root_url
     end
   end

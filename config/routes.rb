@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get 'close_dialog', to: 'welcome#close_dialog', as: 'close_dialog'
   post 'contact', to: 'welcome#contact', as: 'contacts'
   
+  # users
+  get 'admin', to: 'users#admin', as: 'admin'
+  
   # posts
   get 'carousel_scroll/:direction', to: 'posts#carousel_scroll', as: 'carousel_scroll'
   get 'edit_post/:tag', to: 'posts#edit', as: 'edit_post'

@@ -1,4 +1,8 @@
 class UsersController < ApplicationController
+  def admin
+    redirect_to root_url unless admin?
+  end
+  
   def show
     @user = User.find params[:id]
   end

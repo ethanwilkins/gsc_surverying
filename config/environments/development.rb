@@ -13,6 +13,14 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
+  # send from dev
+  config.action_mailer.delivery_method = :sendmail
+  config.action_mailer.perform_deliveries = true
+  
+  config.sendmail_settings = { :address => "smtp.covelopllc.com",
+     :port => "587", :domain => "covelopllc.com", :user_name => "covelopllc@covelopllc.com", 
+    :password => "xxx", :authentication => "plain", :enable_starttls_auto => true }
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
