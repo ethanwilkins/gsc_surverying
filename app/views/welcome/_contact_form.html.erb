@@ -1,29 +1,30 @@
 <div class="contact_form">
-  <%= form_tag contact_path do %>
+  <% @contact = Contact.new %>
+  <%= form_for(@contact) do |f| %>
     <div align="center">
       <p>
-        <%= text_field_tag :name, nil, placeholder: "Name", class: :standard_text_field %>
+        <%= f.text_field :name, placeholder: "Name", class: :standard_text_field %>
       </p>
       <p>
-        <%= text_field_tag :organization, nil, placeholder: "Organization", class: :standard_text_field %>
+        <%= f.text_field :organization, placeholder: "Organization", class: :standard_text_field %>
       </p>
       <p>
-        <%= text_field_tag :work_phone, nil, placeholder: "Work phone", class: :standard_text_field %>
+        <%= f.text_field :work_phone, placeholder: "Work phone", class: :standard_text_field %>
       </p>
       <p>
-        <%= text_field_tag :home_phone, nil, placeholder: "Home phone", class: :standard_text_field %>
+        <%= f.text_field :home_phone, placeholder: "Home phone", class: :standard_text_field %>
       </p>
       <p>
-        <%= text_field_tag :fax, nil, placeholder: "Fax", class: :standard_text_field %>
+        <%= f.text_field :fax, placeholder: "Fax", class: :standard_text_field %>
       </p>
       <p>
-        <%= text_field_tag :email, nil, placeholder: "E-mail", class: :standard_text_field %>
+        <%= f.text_field :email, placeholder: "E-mail", class: :standard_text_field %>
       </p>
       <p>
-        <%= text_field_tag :url, nil, placeholder: "URL", class: :standard_text_field %>
+        <%= f.text_field :url, placeholder: "URL", class: :standard_text_field %>
       </p>
       <p>
-        <%= text_area_tag :comments, nil, placeholder: "Comments", class: :standard_text_field %>
+        <%= f.text_area :comments, placeholder: "Comments", class: :standard_text_field %>
       </p>
 	    <p>
         <button type="submit" name="commit" class="standard_form_button">
