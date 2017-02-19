@@ -124,7 +124,7 @@
 .google_maps {
   width: 31%;
   float: right;
-  padding-top: 100px;
+  padding-top: 125px;
   padding-right: 50px;
 }
 
@@ -145,6 +145,17 @@
 }
 
 .company_emails {
+font-size: 25px;
+}
+
+#email_link {
+color: darkblue;
+font-size: 20px;
+
+}
+
+#email_link:hover {
+color: darkorange;
 }
 
 .contact_us_section_bulk {
@@ -160,9 +171,9 @@
 }
 
 .section_part_contact_us {
-  min-height: 580px;
+  min-height: 600px;
   background: white;
-  color: DarkBlue;
+  color: Darkorange;
   text-align: center;
   position: relative;
 }
@@ -177,6 +188,15 @@
   float: left;
   width: 31%;
   padding-top: 30px;
+}
+
+.clients_logos {
+  -webkit-column-count: 3; /* Chrome, Safari, Opera */
+  -moz-column-count: 3; /* Firefox */
+  column-count: 3;
+  -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+  -moz-column-gap: 30px; /* Firefox */
+  column-gap: 30px;
 }
 
 .div1_about {}
@@ -206,7 +226,44 @@
     font-weight: bold;
     width: 90%
   }
-  #contact_us_section {
-    visibility: hidden;
+  .contact_form {
+    float: left;
+    width: 98%;
+    padding-top: 30px;
+	}
+	.google_maps {
+	  width: 55%;
+	  margin: 0 auto;
+	}
+	.facebook_icon {
+	  float: left;
+	  width:30%;
+	  padding-bottom: 30px;
+	}
+	.twitter_icon {
+	  float: left;
+	  width:30%;
+	  padding-bottom: 30px;
+	}
+	.instagram_icon {
+	  float: left;
+	  width:30%;
+	  padding-bottom: 30px;
+	}
+	.company_emails {
+	font-size: 25px;
+	}
+	#email_link {
+	color: darkblue;
+	font-size: 20px;
+	}
+  .wrapper_contacts {
+    padding-top: 70px;
+    width: 98%;
+    float: right;
+  }
+  .section_part_contact_us {
+    min-height: 1600px;
+    background: lightgrey;
   }
 }
