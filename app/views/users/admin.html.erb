@@ -5,7 +5,7 @@
     <p>Admin Section (<%= current_user.name %>)</p>
     
     <p>
-      Contacts received (<%= Contact.where(seen: nil).size %> unseen)
+      Contacts received (<%= link_to "#{Contact.where(seen: nil).size.to_s} unseen", contacts_path %>)
     </p>
   </div>
 <% end %>

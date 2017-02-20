@@ -10,7 +10,6 @@ Rails.application.routes.draw do
   get 'scroll_to_top', to: 'welcome#scroll_to_top', as: 'scroll_to_top'
   get 'services_dialog/:service', to: 'welcome#services_dialog', as: 'services_dialog'
   get 'close_dialog', to: 'welcome#close_dialog', as: 'close_dialog'
-  post 'contact', to: 'welcome#contact', as: 'contacts'
   
   # users
   get 'admin', to: 'users#admin', as: 'admin'
@@ -18,6 +17,9 @@ Rails.application.routes.draw do
   # posts
   get 'carousel_scroll/:direction', to: 'posts#carousel_scroll', as: 'carousel_scroll'
   get 'edit_post/:tag', to: 'posts#edit', as: 'edit_post'
+  
+  # contacts
+  delete 'clear_contacts', to: 'contacts#destroy_all', as: 'destroy_all_contacts'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -38,6 +40,7 @@ Rails.application.routes.draw do
   #   resources :products
   resources :users
   resources :posts
+  resources :contacts
 
   # Example resource route with options:
   #   resources :products do
