@@ -4,5 +4,8 @@
   <div class="card" align="center">
     <p>Admin Section (<%= current_user.name %>)</p>
     
+    <p>
+      Contacts received (<%= Contact.where(seen: nil).size %> unseen)
+    </p>
   </div>
 <% end %>

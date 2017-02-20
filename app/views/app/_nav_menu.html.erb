@@ -15,7 +15,8 @@
     <% end %>
   
     <% if current_user %>
-    	<%= link_to "Signed in as " + current_user.name, user_path(current_user), class: :standard_nav_menu_link %>
+    	<%= link_to "Signed in as " + current_user.name,
+    	  (admin? ? admin_path : user_path(current_user)), class: :standard_nav_menu_link %>
     	  
     	<%= link_to fa_icon("sign-out", "Log out"), sessions_destroy_path, method: :delete,
     	  class: :standard_nav_menu_link, title: "Click here to destroy your cookie.",
