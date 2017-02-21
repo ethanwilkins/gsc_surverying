@@ -68,7 +68,7 @@
 
 .services_img_container {
   float: left;
-  width: 16.66666666%;
+  width: 33.33333333%;
 }
 
 .services_img {
@@ -205,6 +205,9 @@ color: darkorange;
 #contact_us_section {}
 
 @media screen and (max-width: 975px) {
+  .services_img_container {
+    width: 50%;
+  }
   .div2_project {
     border: 0px;
   }
@@ -228,17 +231,17 @@ color: darkorange;
 	}
 	.facebook_icon {
 	  float: left;
-	  width:30%;
+	  width: 30%;
 	  padding-bottom: 30px;
 	}
 	.twitter_icon {
 	  float: left;
-	  width:30%;
+	  width: 30%;
 	  padding-bottom: 30px;
 	}
 	.instagram_icon {
 	  float: left;
-	  width:30%;
+	  width: 30%;
 	  padding-bottom: 30px;
 	}
 	.company_emails {
@@ -255,6 +258,5 @@ color: darkorange;
   }
   .section_part_contact_us {
     min-height: 1600px;
-    background: lightgrey;
   }
 }
