@@ -31,6 +31,12 @@ class PostsController < ApplicationController
     end
   end
   
+  def destroy
+    @post = Post.find_by_id params[:id]
+    @post.destroy
+    redirect_to :back
+  end
+  
   def carousel_scroll
     @carousel_size = 4
     @direction = params[:direction]

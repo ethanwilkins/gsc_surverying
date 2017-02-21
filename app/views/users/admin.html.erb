@@ -8,4 +8,16 @@
       Contacts received (<%= link_to "#{Contact.where(seen: nil).size.to_s} unseen", contacts_path %>)
     </p>
   </div>
+  
+  <% for post in @posts %>
+    <div class="card" align="center">
+      <%= link_to "Edit (#{post.tag})", edit_post_path(tag: post.tag), class: :top_right_link %>
+      <%= link_to "Delete", post_path(post), method: :delete, class: :bottom_left_link, data: { confirm: "Are you sure?" } %>
+      <p>
+        <%= post.body %>
+      </p>
+      
+      <%= image_tag post.image, width: "80%" if post.image.present? %>
+    </div>
+  <% end %>
 <% end %>

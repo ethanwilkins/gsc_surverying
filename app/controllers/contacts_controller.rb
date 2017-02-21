@@ -1,6 +1,9 @@
 class ContactsController < ApplicationController
   def index
-    @contacts = Contact.where(seen: nil)
+    @contacts = Contact.all.reverse
+    for contact in @contacts
+      contact.update seen: true
+    end
   end
   
   def create
