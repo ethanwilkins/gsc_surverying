@@ -10,7 +10,17 @@
 		  Attach an image: <%= f.file_field :image %>
 		  
       <p>
-        <%= f.text_field :tag, placeholder: "Tag text or image to a particular location...",
+        <%= f.text_field :tag, placeholder: "Tag text or image to a specific location...",
+          class: :standard_text_field %>
+      </p>
+		  
+      <p>
+        <%= f.text_field :section, placeholder: "Tag content for a particular section...",
+          class: :standard_text_field %>
+      </p>
+		  
+      <p>
+        <%= f.text_field :project, placeholder: "Tag content for a particular project...",
           class: :standard_text_field %>
       </p>
 		  
