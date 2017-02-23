@@ -72,13 +72,13 @@
 }
 
 .services_img {
-  width: 85%;
+  width: 90%;
 }
 
 .services_img_txt {
   position: relative;
   bottom: 100px;
-  width: 75%;
+  width: 50%;
   color: white;
 }
 
@@ -113,6 +113,7 @@
   color: DarkBlue;
   text-align: center;
   position: relative;
+  overflow: auto;
 }
 
 .section_spacer {
