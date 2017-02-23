@@ -1,18 +1,15 @@
 <div class="section_part" id="projects_section">
-  <div class="div1_project">
-    <h2 class="project_h2">Seminole Indian Relocation</h2>
-    <h4>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.
-    </h4>
-  </div>
-  <div class="div2_project">
-    <h2 class="project_h2">Seminole Indian Relocation</h2>
-    <h4>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.
-    </h4>
-  </div>
-  <div class="div3_project">
-    <h2 class="project_h2">Seminole Indian Relocation</h2>
-    <h4>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.
-    </h4>
-  </div>
+  <% for project in @projects %>
+    <%= link_to services_dialog_path(project.tag), remote: true do %>
+      <div align="center">
+        <div>
+          project.title
+        </div>
+        <div>
+          project.body
+        </div>
+      </div>
+    <% end %>
+  <% end %>
 </div>
 <div class="section_spacer"></div>

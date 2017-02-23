@@ -1,7 +1,9 @@
 class WelcomeController < ApplicationController
   def index
     @you_are_home = true
-    cookies[:carousel_index] = 0
+    # cookies[:carousel_index] = 0
+    # projects to be listen in projects section
+    @projects = Post.where(section: "projects").reverse
   end
   
   def close_dialog
