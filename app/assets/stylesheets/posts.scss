@@ -2,9 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.project_img {
+.project_img_container {
   float: left;
   width: 25%;
+}
+
+.project_img {
+  width: 85%;
 }
 
 .project_title {

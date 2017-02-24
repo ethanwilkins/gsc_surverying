@@ -7,7 +7,9 @@
           <%= @project.title %>
         </p>
         <% for image in @project_images %>
-          <%= image_tag image.image, class: :project_img %>
+          <div class="project_img_container">
+            <%= image_tag image.image, class: :project_img %>
+          </div>
         <% end %>
       <% when "1" %>
         <p>
