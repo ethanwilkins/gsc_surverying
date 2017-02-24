@@ -11,6 +11,9 @@ class WelcomeController < ApplicationController
   
   def services_dialog
     @service = params[:service].to_i
+    if params[:service].include? "project"
+      
+    end
   end
   
   def scroll_to_top
