@@ -1,4 +1,7 @@
 <div class="section_part" id="projects_section">
+  <div class="clients_header">
+   <h2 class="clients_h2">Projects</h2>
+  </div>
   <% for project in @projects %>
     <%= link_to services_dialog_path(project.tag), remote: true do %>
       <div align="center">
