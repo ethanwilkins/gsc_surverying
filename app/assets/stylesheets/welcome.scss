@@ -78,9 +78,10 @@
 
 .services_img_txt {
   position: relative;
-  bottom: 100px;
+  bottom: 175px;
   width: 50%;
   color: white;
+  font-size: 20px;
 }
 
 .cover_image {
@@ -208,6 +209,11 @@ color: darkorange;
 @media screen and (max-width: 975px) {
   .services_img_container {
     width: 50%;
+  }
+  .services_img_txt {
+    bottom: 100px;
+    width: 50%;
+    font-size: 15px;
   }
   .div2_project {
     border: 0px;
