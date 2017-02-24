@@ -16,6 +16,10 @@
   font-weight: bold;
 }
 
+.project_body {
+  width: 55%;
+}
+
 .edit_cover_image_link {
   position: absolute;
   top: 85px;
@@ -83,6 +87,9 @@
 }
 
 @media screen and (max-width: 975px) {
+  .project_body {
+    width: 85%;
+  }
   .clients_logos {
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
