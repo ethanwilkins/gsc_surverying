@@ -12,7 +12,7 @@ class WelcomeController < ApplicationController
   def services_dialog
     @service = params[:service].to_i
     if params[:service].include? "project"
-      
+      @images = Post.where(project: params[:service]).reverse
     end
   end
   
