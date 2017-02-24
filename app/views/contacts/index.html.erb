@@ -2,8 +2,11 @@
   <div class="card_spacer"></div>
 
   <div class="card" align="center">
-    <%= link_to "Clear all contacts (#{Contact.all.size})", destroy_all_contacts_path, method: :delete,
+    <%= link_to "Back (admin)", admin_path, class: :top_right_link %>
+    <p>
+      <%= link_to "Clear all contacts (#{Contact.all.size})", destroy_all_contacts_path, method: :delete,
       	  data: { confirm: "Are you sure you want to permanently delete all contacts?" } %>
+    </p>
   </div>
 
   <% for contact in @contacts %>

@@ -1,8 +1,13 @@
 <div class="card_spacer"></div>
 
 <div class="card">
+  <%= link_to "Back (admin)", admin_path, class: :top_right_link %>
   <%= form_for(@post) do |f| %>
     <div align="center">
+      <p>
+        <%= f.text_field :title, placeholder: "Title (optional)", class: :standard_text_field %>
+      </p>
+      
       <p>
         <%= f.text_area :body, placeholder: "Write your text here..." %>
       </p>
