@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      ContactMailer.contact_email(@contact).deliver
+      #ContactMailer.contact_email(@contact).deliver
       redirect_to root_url
     end
   end
