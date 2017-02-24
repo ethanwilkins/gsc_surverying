@@ -14,11 +14,11 @@
     <div class="card" align="center">
       <%= link_to "Edit (#{post.tag})", edit_post_path(tag: post.tag), class: :top_right_link %>
       <%= link_to "Delete", post_path(post), method: :delete, class: :bottom_left_link, data: { confirm: "Are you sure?" } %>
-      <p>
+      <p class="justified_body_text" style="width: 95%;">
         <%= post.body %>
       </p>
       
-      <%= image_tag post.image, width: "80%" if post.image.present? %>
+      <%= image_tag post.image, width: "95%" if post.image.present? %>
     </div>
   <% end %>
 <% end %>
