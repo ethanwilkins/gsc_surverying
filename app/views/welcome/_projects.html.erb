@@ -5,10 +5,10 @@
   <% for project in @projects %>
     <%= link_to services_dialog_path(project.tag), remote: true do %>
       <div align="center">
-        <div>
+        <p class="project_title">
           <%= project.title %>
-        </div>
-        <div>
+        </p>
+        <div class="justified_body_text" style="width: 85%;">
           <%= project.body %>
         </div>
       </div>
