@@ -1,8 +1,15 @@
 <div class="dialog_modal" id="dialog_modal">
-  <div class="card" align="center">
+  <div class="<%= service.include?('project') ? 'project_card' : 'card' %>" align="center">
     <%= link_to '<i class="fa fa-times"></i>'.html_safe, close_dialog_path, remote: true, class: :top_right_link %>
     <% case service %>
-      <% when 1 %>
+      <% when "project_1" %>
+        <p class="project_title">
+          <%= @project.title %>
+        </p>
+        <% for image in @project_images %>
+          <%= image_tag image.image, class: :project_img %>
+        <% end %>
+      <% when "1" %>
         <p>
           Construction layout for clearing limits, slope staking, fine grading, pipe, drainage structures, bridges, MSE walls, retaining walls, box culverts, storm water management ponds, building pads, Right-of-Way Monuments, controlled access fencing, etc.
         </p>
@@ -27,7 +34,7 @@
         <p>
           Dams/Lakes/Ponds
         </p>
-      <% when 2 %>
+      <% when "2" %>
         <p>
           3D Modeling for use with the GPS Machine Control on Highway and Commercial Sites
         </p>
@@ -40,7 +47,7 @@
         <p>
           Create Cut/Fill Maps for Pipe and Utility Depths
         </p>
-      <% when 3 %>
+      <% when "3" %>
         <p>
           Setup of initial control network
         </p>
@@ -56,7 +63,7 @@
         <p>
           Provide intermediate surveys for progress payments and checks on production
         </p>
-      <% when 4 %>
+      <% when "4" %>
         <p>
           Preliminary engineering projects
         </p>
@@ -66,7 +73,7 @@
         <p>
           Borrow pit surveys
         </p>
-      <% when 5 %>
+      <% when "5" %>
         <p>
           Arial photography
         </p>
@@ -76,7 +83,7 @@
         <p>
           3D machine control
         </p>
-      <% when 6 %>
+      <% when "6" %>
         <p>
           As-built surveys
         </p>

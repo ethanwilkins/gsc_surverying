@@ -122,6 +122,11 @@ textarea {
 	@include card;
 }
 
+.project_card {
+  @include card;
+  overflow: auto;
+}
+
 .top_right_link {
 	@include corner_link;
 	right: 5px;

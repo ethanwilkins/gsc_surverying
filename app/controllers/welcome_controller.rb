@@ -10,9 +10,10 @@ class WelcomeController < ApplicationController
   end
   
   def services_dialog
-    @service = params[:service].to_i
-    if params[:service].include? "project"
-      @images = Post.where(project: params[:service]).reverse
+    @service = params[:service]
+    if @service.include? "project"
+      @project = Post.find_by_tag(@service)
+      @project_images = Post.where(project: @service).reverse
     end
   end
   

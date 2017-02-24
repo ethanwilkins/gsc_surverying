@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.project_img {
+  float: left;
+  width: 25%;
+}
+
+.project_title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .edit_cover_image_link {
   position: absolute;
   top: 85px;

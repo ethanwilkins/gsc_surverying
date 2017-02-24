@@ -147,17 +147,18 @@
 }
 
 .company_emails {
-font-size: 25px;
+  font-size: 25px;
+  color: darkorange;
 }
 
 #email_link {
-color: darkblue;
-font-size: 20px;
+  color: darkblue;
+  font-size: 20px;
 
 }
 
 #email_link:hover {
-color: darkorange;
+  color: darkorange;
 }
 
 .contact_us_section_bulk {
@@ -266,7 +267,6 @@ color: darkorange;
   .section_part_contact_us {
     min-height: 1600px;
   }
-
   .section_spacer {
     height: 350px;
   }
