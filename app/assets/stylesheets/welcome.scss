@@ -60,7 +60,7 @@
 .div3_project {
   color: DarkBlue;
   display: inline-block;
-  width: 350px;
+  width: 450px;
   margin: 2px;
   border: 0px;
   padding: 10px;
@@ -109,7 +109,7 @@
 
 .section_part {
   width: 100%;
-  min-height: 750px;
+  min-height: 500px;
   background: white;
   color: DarkBlue;
   text-align: center;
@@ -259,5 +259,9 @@ color: darkorange;
   }
   .section_part_contact_us {
     min-height: 1600px;
+  }
+
+  .section_spacer {
+    height: 350px;
   }
 }
