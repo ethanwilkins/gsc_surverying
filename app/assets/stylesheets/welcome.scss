@@ -122,6 +122,9 @@
   width: 100%;
   height: 450px;
   opacity: 0.1;
+  // for safari opacity
+  -khtml-opacity: 0.5;
+	filter: alpha(opacity=50);
 }
 
 .google_maps {
