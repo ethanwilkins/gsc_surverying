@@ -1,4 +1,5 @@
 <div class="dialog_modal" id="dialog_modal">
+  <div id="project_img_anchor"></div>
   <div class="<%= service.include?('project') ? 'project_card' : 'card' %>" align="center">
     <%= link_to '<i class="fa fa-times"></i>'.html_safe, close_dialog_path, remote: true, class: :top_right_link %>
     <% case service %>
