@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'scroll_to_top', to: 'welcome#scroll_to_top', as: 'scroll_to_top'
   get 'services_dialog/:service', to: 'welcome#services_dialog', as: 'services_dialog'
   get 'close_dialog', to: 'welcome#close_dialog', as: 'close_dialog'
+  get 'show_project_image/:id', to: 'welcome#show_project_image', as: 'show_project_image'
   
   # users
   get 'admin', to: 'users#admin', as: 'admin'

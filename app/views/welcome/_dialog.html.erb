@@ -8,7 +8,9 @@
         </p>
         <% for image in @project_images %>
           <div class="project_img_container">
-            <%= image_tag image.image, class: :project_img %>
+            <%= link_to show_project_image_path(image.id), remote: true do %>
+              <%= image_tag image.image, class: :project_img %>
+            <% end %>
           </div>
         <% end %>
       <% when "1" %>

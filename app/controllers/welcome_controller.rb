@@ -6,6 +6,10 @@ class WelcomeController < ApplicationController
     @projects = Post.where(section: "projects").reverse
   end
   
+  def show_project_image
+    @image = Post.find(params[:id])
+  end
+  
   def close_dialog
   end
   
