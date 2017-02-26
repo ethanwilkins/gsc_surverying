@@ -124,8 +124,8 @@
   height: 450px;
   opacity: 0.1;
   // for safari opacity
-  -khtml-opacity: 0.5;
-	filter: alpha(opacity=50);
+	filter: alpha(opacity=10);
+  -khtml-opacity: 0.1;
 }
 
 .google_maps {
