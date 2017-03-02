@@ -20,13 +20,12 @@
       </p>
 		  
       <p>
-        <%= f.text_field :section, placeholder: "Tag content for a particular section...",
+        <%= f.text_field :project, placeholder: "Tag content for a particular project...",
           class: :standard_text_field %>
       </p>
 		  
       <p>
-        <%= f.text_field :project, placeholder: "Tag content for a particular project...",
-          class: :standard_text_field %>
+	      <%= select_tag :section, options_for_select(section_options) %>
       </p>
 		  
 	    <p>

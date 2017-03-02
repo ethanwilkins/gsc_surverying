@@ -1,4 +1,14 @@
 module PostsHelper
+  def section_options
+    options = [["Tag content for a particular section...", nil],
+      ["About Us", "about_us"],
+      ["Services", "services"],
+      ["Projects", "projects"],
+      ["Clients", "clients"],
+      ["Contact Us", "contact_us"]
+    ]
+  end
+  
   def post_img tag
     post = Post.find_by_tag tag
     if post and post.image.present?
