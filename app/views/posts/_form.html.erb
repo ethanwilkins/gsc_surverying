@@ -26,13 +26,21 @@
           class: :standard_text_field %>
       </p>
 		  
-      <p>
-        Project: <%= f.text_field :project, placeholder: "Tag content for a particular project...",
-          class: :standard_text_field %>
-      </p>
+		  <% unless @post.section.eql? "projects" %>
+        <p>
+          Project: <%= f.text_field :project, placeholder: "Tag content for a particular project...",
+            class: :standard_text_field %>
+        </p>
+      <% end %>
 		  
       <p>
-	      Section: <%= select_tag :section, options_for_select(section_options) %>
+	      Section: 
+	      <% if @post.section.eql? "projects" %>
+	        Projects
+	        <%= hidden_field_tag :section, "projects" %>
+	      <% else %>
+	        <%= select_tag :section, options_for_select(section_options) %>
+	      <% end %>
       </p>
 		  
 	    <p>
