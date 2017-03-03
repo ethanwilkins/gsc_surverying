@@ -17,8 +17,12 @@ class PostsController < ApplicationController
   end
   
   def edit
-    @post = Post.find_by_tag params[:tag]
-    unless @post
+    if params[:id]
+      @post = Post.find_by_id params[:id]
+    elsif params[:tag]
+      @post = Post.find_by_tag params[:tag]
+    end
+    if params[:tag] and not @post
       @post = Post.create body: "[placeholder text]", tag: params[:tag]
     end
     @editing = true
@@ -26,7 +30,7 @@ class PostsController < ApplicationController
   
   def update
     if @post.update(post_params)
-      redirect_to root_url
+      redirect_to :back
     else
       redirect_to :back
     end

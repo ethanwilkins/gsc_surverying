@@ -13,6 +13,9 @@
         </div>
       </div>
     <% end %>
+    <% if admin? %>
+      <p><%= link_to "Edit", edit_post_by_tag_path(project.tag) %></p>
+    <% end %>
   <% end %>
 </div>
 <div class="section_spacer"></div>

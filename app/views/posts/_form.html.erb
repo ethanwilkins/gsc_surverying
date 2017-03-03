@@ -5,6 +5,13 @@
   <%= form_for(@post) do |f| %>
     <div align="center">
       <p>
+        <% if @editing %>
+          You are editing content  
+        <% else %>
+          You are creating new content
+        <% end %>
+      </p>
+      <p>
         <%= f.text_field :title, placeholder: "Title (optional)", class: :standard_text_field %>
       </p>
       

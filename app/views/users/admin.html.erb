@@ -12,7 +12,8 @@
   
   <% for post in @posts %>
     <div class="card" align="center">
-      <%= link_to "Edit (#{post.tag})", edit_post_path(tag: post.tag), class: :top_right_link %>
+      <%= link_to "Edit#{ post.tag.present? ? ' (' + post.tag + ')' : nil}",
+        edit_post_path(post), class: :top_right_link %>
       <%= link_to "Delete", post_path(post), method: :delete, class: :bottom_left_link, data: { confirm: "Are you sure?" } %>
       <p class="justified_body_text" style="width: 95%;">
         <%= post.body %>

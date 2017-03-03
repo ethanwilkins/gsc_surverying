@@ -3,6 +3,7 @@
     <%= link_to '<i class="fa fa-times"></i>'.html_safe, close_dialog_path, remote: true, class: :top_right_link %>
     <% case service %>
       <% when "project_1" %>
+        <%= link_to "Edit project", edit_post_by_tag_path(@project.tag), class: :top_left_link %>
         <p class="project_title">
           <%= @project.title %>
         </p>
@@ -11,6 +12,7 @@
             <%= link_to show_project_image_path(image.id), remote: true do %>
               <%= image_tag image.image, class: :project_img %>
             <% end %>
+            <%= link_to "Edit", edit_post_path(image) if admin? %>
           </div>
         <% end %>
       <% when "1" %>

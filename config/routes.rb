@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   
   # posts
   get 'carousel_scroll/:direction', to: 'posts#carousel_scroll', as: 'carousel_scroll'
-  get 'edit_post/:tag', to: 'posts#edit', as: 'edit_post'
+  get 'edit_post_by_tag/:tag', to: 'posts#edit', as: 'edit_post_by_tag'
   
   # contacts
   delete 'clear_contacts', to: 'contacts#destroy_all', as: 'destroy_all_contacts'
