@@ -33,15 +33,17 @@
         </p>
       <% end %>
 		  
-      <p>
-	      Section: 
-	      <% if @post.section.eql? "projects" %>
-	        Projects
-	        <%= hidden_field_tag :section, "projects" %>
-	      <% else %>
-	        <%= select_tag :section, options_for_select(section_options) %>
-	      <% end %>
-      </p>
+		  <% unless @post.project.present? %>
+        <p>
+	        Section: 
+	        <% if @post.section.eql? "projects" %>
+	          Projects
+	          <%= hidden_field_tag :section, "projects" %>
+	        <% else %>
+	          <%= select_tag :section, options_for_select(section_options) %>
+	        <% end %>
+        </p>
+      <% end %>
 		  
 	    <p>
         <button type="submit" name="commit" class="standard_form_button">
