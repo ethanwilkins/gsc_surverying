@@ -7,7 +7,7 @@ class WelcomeController < ApplicationController
   end
   
   def show_project_image
-    @image = Post.find(params[:id])
+    @image = Post.find_by_id params[:id]
   end
   
   def close_dialog

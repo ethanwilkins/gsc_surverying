@@ -127,6 +127,12 @@ textarea {
   overflow: auto;
 }
 
+.project_img_card {
+  @include card;
+  max-width: none;
+  z-index: 5;
+}
+
 .top_right_link {
 	@include corner_link;
 	right: 5px;
