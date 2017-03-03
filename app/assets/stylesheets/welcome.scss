@@ -135,10 +135,17 @@
   padding-left: 25px;
 }
 
-.social_icon {
+.social_icon_wrapper {
   float: left;
-  width: 30%;
+  width: 33.33333%;
   padding-bottom: 15px;
+}
+
+.social_icon_link {
+}
+
+.social_icon {
+  width: 65%;
 }
 
 .company_emails {
@@ -233,7 +240,7 @@
 	  margin: 0 auto;
 	}
 	.social_icon {
-	  width: 33.33333%;
+	  width: 65%;
 	}
 	.company_emails {
 	font-size: 25px;

@@ -6,15 +6,21 @@
   <%= render "welcome/contact_form" %>
   
   <div class= "wrapper_contacts">
-    <%= link_to "http://www.facebook.com" do %>
-      <%= image_tag "contact_us/facebook.png", class: :social_icon %>
-    <% end %>
-    <%= link_to "http://www.twitter.com" do %>
-      <%= image_tag "contact_us/twitter.png", class: :social_icon %>
-    <% end %>
-    <%= link_to "http://www.instagram.com" do %>
-      <%= image_tag "contact_us/instagram.png", class: :social_icon %>
-    <% end %>
+    <div class="social_icon_wrapper">
+      <%= link_to "http://www.facebook.com", class: :social_icon_link do %>
+        <%= image_tag "icons/facebook.png", class: :social_icon %>
+      <% end %>
+    </div>
+    <div class="social_icon_wrapper">
+      <%= link_to "http://www.twitter.com", class: :social_icon_link do %>
+        <%= image_tag "icons/twitter.png", class: :social_icon %>
+      <% end %>
+    </div>
+    <div class="social_icon_wrapper">
+      <%= link_to "http://www.instagram.com", class: :social_icon_link do %>
+        <%= image_tag "icons/instagram.png", class: :social_icon %>
+      <% end %>
+    </div>
   
     <div class="company_emails">
       <p id="company_emails">

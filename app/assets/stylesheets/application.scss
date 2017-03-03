@@ -130,7 +130,7 @@ textarea {
 .project_img_card {
   @include card;
   max-width: none;
-  z-index: 5;
+  min-height: 85%;
 }
 
 .top_right_link {
