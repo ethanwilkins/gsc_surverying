@@ -4,7 +4,7 @@
   <% end %>
   <% for section in ["About Us", "Services", "Projects", "Clients", "Contact Us"] %>
     <% section_id = section.downcase.gsub(" ", "_") + "_section" %>
-    <%= link_to focus_to_section_path(section_id: section_id), remote: true do %>
+    <%= link_to (@you_are_home ? focus_to_section_path(section_id: section_id) : root_url), remote: @you_are_home do %>
       <div class="nav_section">
         <div class="nav_section_text">
           <%= section %>

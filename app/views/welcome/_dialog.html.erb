@@ -15,6 +15,8 @@
             <%= link_to "Edit", edit_post_path(image) if admin? %>
           </div>
         <% end %>
+        <%= link_to "Add another image",
+          edit_post_by_tag_path(tag: "#{@project.tag + '_img' + (Post.all.size + 1).to_s}", project: @project.tag) %>
       <% when "1" %>
         <p>
           Construction layout for clearing limits, slope staking, fine grading, pipe, drainage structures, bridges, MSE walls, retaining walls, box culverts, storm water management ponds, building pads, Right-of-Way Monuments, controlled access fencing, etc.

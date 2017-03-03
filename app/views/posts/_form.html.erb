@@ -12,7 +12,7 @@
         <% end %>
       </p>
       <p>
-        <%= f.text_field :title, placeholder: "Title (optional)", class: :standard_text_field %>
+        Title: <%= f.text_field :title, placeholder: "Title (optional)", class: :standard_text_field %>
       </p>
       
       <p>
@@ -22,17 +22,17 @@
 		  Attach an image: <%= f.file_field :image %>
 		  
       <p>
-        <%= f.text_field :tag, placeholder: "Tag text or image to a specific location...",
+        Tag: <%= f.text_field :tag, placeholder: "Tag text or image to a specific location...",
           class: :standard_text_field %>
       </p>
 		  
       <p>
-        <%= f.text_field :project, placeholder: "Tag content for a particular project...",
+        Project: <%= f.text_field :project, placeholder: "Tag content for a particular project...",
           class: :standard_text_field %>
       </p>
 		  
       <p>
-	      <%= select_tag :section, options_for_select(section_options) %>
+	      Section: <%= select_tag :section, options_for_select(section_options) %>
       </p>
 		  
 	    <p>

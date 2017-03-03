@@ -24,6 +24,8 @@ class PostsController < ApplicationController
     end
     if params[:tag] and not @post
       @post = Post.create body: "[placeholder text]", tag: params[:tag]
+      @post.project = params[:project] if params[:project]
+      puts "\nSTUFF HAPPENED\n"
     end
     @editing = true
   end
