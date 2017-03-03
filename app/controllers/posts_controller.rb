@@ -10,6 +10,7 @@ class PostsController < ApplicationController
     @post.user_id = current_user.id
     @post.section = params[:section]
     if @post.save
+      flash[:notice] = "New content created successfully."
       redirect_to :back
     else
       redirect_to :back
@@ -23,7 +24,7 @@ class PostsController < ApplicationController
       @post = Post.find_by_tag params[:tag]
     end
     if params[:tag] and not @post
-      @post = Post.create body: "[placeholder text]", tag: params[:tag]
+      @post = Post.new body: "[placeholder text]", tag: params[:tag]
       @post.project = params[:project] if params[:project]
       puts "\nSTUFF HAPPENED\n"
     end
@@ -32,6 +33,7 @@ class PostsController < ApplicationController
   
   def update
     if @post.update(post_params)
+      flash[:notice] = "You have successfully updated content."
       redirect_to :back
     else
       redirect_to :back

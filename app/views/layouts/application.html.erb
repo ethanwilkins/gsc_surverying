@@ -16,6 +16,13 @@
 
 <%= render "pages/scroll_to_top" %>
 
+<% flash.each do |name, msg| %>
+  <div class="card_spacer"></div>
+  <div class="card" align="center">
+    <p><%= msg %></p>
+  </div>
+<% end %>
+
 <%= yield %>
 
 </body>

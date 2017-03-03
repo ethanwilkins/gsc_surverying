@@ -17,7 +17,7 @@ class WelcomeController < ApplicationController
     @service = params[:service]
     if @service.include? "project"
       @project = Post.find_by_tag(@service)
-      @project_images = Post.where(project: @service).reverse
+      @project_images = Post.where(project: @service)
     end
   end
   
