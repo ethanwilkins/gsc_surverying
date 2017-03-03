@@ -1,14 +1,14 @@
-<div class="section_part" id="projects_section">
+<div class="section_part" id="projects_section" align="center">
   <div class="clients_header">
    <h2 class="clients_h2">Projects</h2>
   </div>
   <% for project in @projects %>
     <%= link_to services_dialog_path(project.tag), remote: true do %>
-      <div align="center">
+      <div class="project_container" align="center">
         <p class="project_title">
           <%= project.title %>
         </p>
-        <div class="justified_body_text project_body">
+        <div class="justified_body_text project_body <%= @projects.last.eql?(project) ? nil : 'project_body_border'  %>">
           <%= project.body %>
         </div>
       </div>
@@ -16,6 +16,14 @@
     <% if admin? %>
       <p><%= link_to "Edit", edit_post_by_tag_path(project.tag) %></p>
     <% end %>
+  <% end %>
+  
+  <% if admin? %>
+    </br>
+    <p>
+      <%= link_to "Add a project",
+        edit_post_by_tag_path(tag: "#{'project_' + (Post.where(section: :projects).size + 1).to_s}", section: :projects) %>
+    </p>
   <% end %>
 </div>
 <div class="section_spacer"></div>
