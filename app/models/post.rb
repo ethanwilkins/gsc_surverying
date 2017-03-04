@@ -5,7 +5,7 @@ class Post < ActiveRecord::Base
   mount_uploader :image, ImageUploader
   
   def unique_tag?
-    if Post.find_by_id(tag: self.tag) and not self.tag.nil?
+    if Post.find_by_tag(tag: self.tag) and not self.tag.nil?
       errors.add(:post, "not unique")
     end
   end

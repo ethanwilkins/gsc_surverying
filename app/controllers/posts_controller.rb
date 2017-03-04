@@ -21,7 +21,7 @@ class PostsController < ApplicationController
     if params[:id]
       @post = Post.find_by_id params[:id]
     elsif params[:tag]
-      @post = Post.find_by_tag params[:tag]
+      @post = Post.where(tag: params[:tag]).last
     end
     if params[:tag] and not @post
       @post = Post.new body: "[placeholder text]", tag: params[:tag]
