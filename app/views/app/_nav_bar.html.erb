@@ -16,13 +16,12 @@
   <% if current_user %>
     <div class="signed_in_as">
       <div>
-        Signed in as 
-        <% if admin? %>
-          <%= link_to current_user.name, admin_path %>
-        <% elsif current_user %>
-          <%= current_user.name %>
-        <% end %>
+        Welcome, <%= current_user.name %>.
       </div>
+      <div class="admin_nav_link">
+        <%= link_to "Admin", admin_path %>
+      </div>
+      <div class="nav_link_separator"> | </div>
       <div class="log_out_nav_link">
         <%= link_to "Log out", sessions_destroy_path, method: :delete, data: { confirm: "Are you sure?" } %>
       </div>
