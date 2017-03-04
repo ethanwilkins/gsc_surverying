@@ -8,7 +8,8 @@
         <p class="project_title">
           <%= project.title %>
         </p>
-        <div class="justified_body_text project_body <%= @projects.last.eql?(project) ? nil : 'project_body_border'  %>">
+        <div
+          class="<%= justified_body project %> project_body <%= @projects.last.eql?(project) ? nil : 'project_body_border'  %>">
           <%= project.body %>
         </div>
       </div>

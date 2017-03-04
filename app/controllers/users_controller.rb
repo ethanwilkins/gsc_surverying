@@ -4,6 +4,10 @@ class UsersController < ApplicationController
     redirect_to root_url unless admin?
   end
   
+  def edit
+  
+  end
+  
   def show
     @user = User.find params[:id]
   end

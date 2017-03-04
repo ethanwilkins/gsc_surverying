@@ -1,4 +1,8 @@
 module PostsHelper
+  def justified_body item
+    'justified_body_text' if item.body.size > 150
+  end
+  
   def section_options
     options = [["Tag content for a particular section...", nil],
       ["About Us", "about_us"],
