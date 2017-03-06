@@ -1,6 +1,6 @@
 <div class="nav_bar">
   <%= link_to (@you_are_home ? scroll_to_top_path : root_url), remote: @you_are_home do %>
-    <%= image_tag "logo.png", class: :nav_logo %>
+    <%= image_tag "logos/logo.png", class: :nav_logo %>
   <% end %>
   <% for section in ["About Us", "Services", "Projects", "Clients", "Contact Us"] %>
     <% section_id = section.downcase.gsub(" ", "_") + "_section" %>
