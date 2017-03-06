@@ -45,7 +45,7 @@ html {
 // can just use css medie rule to show elongated version of image instead
 body {
   margin: 0;
-  background-image: asset_url("/images/red.jpg");
+  background-image: url("/backgrounds/red.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
