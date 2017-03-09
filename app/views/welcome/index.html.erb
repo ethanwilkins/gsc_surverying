@@ -1,12 +1,11 @@
 <!--- Bandaid fix as white div for now - Thanks, Justin! --->
-<div style="background-color:white">
+<div style="background-color:rgb(235, 235, 235)">
   <% if Post.find_by_tag("cover_image") %>
     <%= image_tag Post.find_by_tag("cover_image").image, class: :cover_image %>
   <% end %>
   <%= link_to "Edit cover image", edit_post_by_tag_path("cover_image"), class: :edit_cover_image_link if admin? %>
   <%= render "welcome/about_us" %>
 </div>
-<div class="section_spacer"></div>
 
 <%= render "welcome/services" %>
 
