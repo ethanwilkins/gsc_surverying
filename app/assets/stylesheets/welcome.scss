@@ -73,8 +73,14 @@
 
 .service_dialog_link_container {
   float: left;
-  width: 16.666666%;
+  width: 25%;
   color: white;
+}
+
+.service_link_txt {
+  width: 75%;
+  color: white;
+  font-size: 17.5;
 }
 
 .service_dialog_link {
@@ -82,32 +88,18 @@
   color: white;
 }
 
+.big_bullet {
+  font-size: 25px;
+}
+
 .service_dialog_links {
   position: relative;
-  bottom: 250px;
+  bottom: 175px;
   width: 100%;
 }
 
 .services_bg_img {
   width: 100%;
-}
-
-.services_img_container {
-  float: left;
-  width: 33.33333333%;
-  padding-top: 15px;
-}
-
-.services_img {
-  width: 85%;
-}
-
-.services_img_txt {
-  position: relative;
-  bottom: 175px;
-  width: 50%;
-  color: white;
-  font-size: 30px;
 }
 
 .cover_image {
@@ -222,8 +214,8 @@
 }
 
 .h2about {
-        font-family: 'Hind Madurai';
-        letter-spacing: 10px;
+  font-family: 'Hind Madurai';
+  letter-spacing: 10px;
 }
 
 .div1_about {}
