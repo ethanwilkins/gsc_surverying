@@ -221,16 +221,41 @@
   padding-top: 30px;
 }
 
+.divmain_about {
+  width: 900px;
+  text-align:justify;  
+  text-justify:inter-word
+}
+
+.about_us_photo {
+  width: 200px;
+  
+  float: top;
+
+}
+
 .h2about {
         font-family: 'Hind Madurai';
         letter-spacing: 10px;
+        color: white;
 }
 
-.div1_about {}
+.div1_about {
+        img {
+                float: right;
+                margin: 5px;
+                }
+        text-vertical-align: top;
+}
 
-.div2_about {}
+.div2_about {
 
-#about_us_section {}
+}
+
+#about_us_section {
+   background-color: DarkBlue;
+   color: DarkGray;
+   }
 
 #services_section {}
 
@@ -259,6 +284,9 @@
     font-size: 14px;
     color: DarkBlue;
     font-weight: bold;
+    width: 90%
+  }
+  .divmain_about {
     width: 90%
   }
   .contact_form {
