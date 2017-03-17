@@ -106,14 +106,6 @@
   width: 100%;
 }
 
-.about_us_text_1 {
-  font-size: 25px;
-  max-width: 1000px;
-  color: DarkBlue;
-  font-weight: bold;
-  padding-top: 25px;
-}
-
 .service_icon {
   width: 110px;
 }
@@ -217,12 +209,13 @@
   width: 900px;
   text-align:justify;  
   text-justify:inter-word
+  
 }
 
 .about_us_photo {
-  width: 200px;
-  
-  float: top;
+  width: 350px;
+  padding: 30px;
+  float: right;
 
 }
 
@@ -231,7 +224,7 @@
                 float: right;
                 margin: 5px;
                 }
-        text-vertical-align: top;
+       
 }
 
 .div2_about {
@@ -239,9 +232,8 @@
 }
 
 #about_us_section {
-   background-color: DarkBlue;
-   color: DarkGray;
-   }
+
+}
 
 #services_section {}
 
