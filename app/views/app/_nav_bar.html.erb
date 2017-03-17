@@ -2,7 +2,7 @@
   <%= link_to (@you_are_home ? scroll_to_top_path : root_url), remote: @you_are_home do %>
     <%= image_tag "logos/logo.png", class: :nav_logo %>
   <% end %>
-  <% for section in ["About Us", "Services", "Projects", "Clients", "Contact Us"] %>
+  <% for section in ["About Us", "Services", "Projects", "Clients", "Contact Us", "Links"] %>
     <% section_id = section.downcase.gsub(" ", "_") + "_section" %>
     <%= link_to (@you_are_home ? focus_to_section_path(section_id: section_id) : root_url), remote: @you_are_home do %>
       <div class="nav_section">
