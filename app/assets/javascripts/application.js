@@ -19,3 +19,4 @@
 //= require jquery.remotipart
 //= require bonsai
 //= require jquery.kanye-ipsum.min.js
+//= require bootstrap-sprockets

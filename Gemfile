@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # for styling and easier basic components
 gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt'

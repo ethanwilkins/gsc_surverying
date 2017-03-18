@@ -17,6 +17,11 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
 @mixin card {
   position: relative;
   padding: 15px 7.5px;
