@@ -1,8 +1,0 @@
-$(".carousel_image").<%= @point_to_add %>().after("<%=j render "posts/carousel_image", image: @image.image, id: @image_id %>");
-
-$("#carousel_images").animate(
-  { width: 500 },
-  { duration: 1000 }
-);
-
-$(".carousel_image").<%= @point_to_remove %>().remove();

@@ -13,12 +13,16 @@ class WelcomeController < ApplicationController
   def close_dialog
   end
   
+  def projects_dialog
+    @project = params[:project]
+    if @project.include? "project"
+      @project = Post.find_by_tag(@project)
+      @project_images = Post.where(project: @project)
+    end
+  end
+  
   def services_dialog
     @service = params[:service]
-    if @service.include? "project"
-      @project = Post.find_by_tag(@service)
-      @project_images = Post.where(project: @service)
-    end
   end
   
   def scroll_to_top

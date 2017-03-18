@@ -1,22 +1,7 @@
 <div class="dialog_modal" id="dialog_modal">
-  <div class="<%= service.include?('project') ? 'project_card' : 'card' %>" id="project_card" align="center">
+  <div class="card" align="center">
     <%= link_to '<i class="fa fa-times"></i>'.html_safe, close_dialog_path, remote: true, class: :top_right_link %>
     <% case service %>
-      <% when "project_1" %>
-        <%= link_to "Edit project", edit_post_by_tag_path(@project.tag), class: :top_left_link %>
-        <p class="project_title">
-          <%= @project.title %>
-        </p>
-        <% for image in @project_images %>
-          <div class="project_img_container">
-            <%= link_to show_project_image_path(image.id), remote: true do %>
-              <%= image_tag image.image, class: :project_img %>
-            <% end %>
-            <%= link_to "Edit", edit_post_path(image) if admin? %>
-          </div>
-        <% end %>
-        <%= link_to "Add another image",
-          edit_post_by_tag_path(tag: "#{@project.tag + '_img' + (Post.all.size + 1).to_s}", project: @project.tag) %>
       <% when "1" %>
         <p>
           Heavy Civil

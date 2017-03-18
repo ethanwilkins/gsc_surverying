@@ -1,10 +1,10 @@
 <div class="section_part" id="projects_section" align="center">
-  <%= image_tag "tripodhightech.jpg", class: :services_bg_img %>
+  <%= image_tag "projects.jpg", class: :services_bg_img %>
   <div class="clients_header">
    <h2 class="clients_h2">Projects</h2>
   </div>
   <% for project in @projects %>
-    <%= link_to services_dialog_path(project.tag), remote: true do %>
+    <%= link_to projects_dialog_path(project.tag), remote: true do %>
       <div class="project_container" align="center">
         <p class="project_title">
           <%= project.title %>
