@@ -23,11 +23,18 @@
   margin: 25% auto;
   font: 30px;
 }
+.section_part_projects{
+  width:100%;
+  min-height: 580px;
+  background-image: url("/images/projects.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-.project_h2 {
-  color: DarkBlue;
-  display: inline-block;
-  border-bottom: 3px solid DarkOrange;
+.projects_h2 {
+  margin: 0px auto;
+  padding-top: 50px;
+
 }
 
 .div_project {
@@ -66,12 +73,20 @@
   padding: 10px;
 }
 
+.section_part_services {
+  width:100%;
+  min-height: 580px;
+  background-image: url("/images/construction.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
 .services_header {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    padding-top: 30px;
-    color: white;
+  margin: 0px auto;
+  text-align: center;
+  color: white;
+  padding-top: 50px;
 }
 
 .service_dialog_link_container {
@@ -84,6 +99,7 @@
   width: 75%;
   color: white;
   font-size: 20px;
+  
 }
 
 .service_dialog_link {
@@ -97,20 +113,12 @@
 
 .service_dialog_links {
   position: relative;
-  bottom: 230px;
   width: 100%;
-}
-
-.services_bg_img {
-  width: 100%;
+  top: 400px;
 }
 
 .cover_image {
   width: 100%;
-}
-
-.service_icon {
-  width: 110px;
 }
 
 .mockup_header {
@@ -142,26 +150,12 @@
 }
 
 .google_maps {
-  width: 31%;
+  width: 33.3333%;
   float: left;
-  padding-top: 100px;
-  padding-left: 25px;
-}
-
-.social_icon_wrapper {
-  float: left;
-  width: 33.33333%;
-  padding-bottom: 15px;
-}
-
-.social_icon_link {
-}
-
-.social_icon {
-  width: 65%;
 }
 
 .company_emails {
+  width: 100%;
   font-size: 25px;
   color: darkblue;
 }
@@ -176,10 +170,6 @@
   color: darkorange;
 }
 
-.contact_us_section_bulk {
-  position: relative;
-}
-
 .section_part_about {
   width: 100%;
   height: 1150px;
@@ -188,38 +178,33 @@
   position: relative;
 }
 
-.section_part_services {
-  width: 100%;
-  min-height: 500px;
-  background: rgb(214, 216, 219);
-  color: DarkBlue;
-  text-align: center;
-  position: relative;
-  overflow: auto;
-  visibility: visible;
-}
+
 .section_part_contact_us {
-  min-height: 600px;
+  min-height: 580px;
   background: white;
-  color: Darkorange;
+  color: Darkblue;
   text-align: center;
-  position: relative;
+}
+
+.contact_us_h2 {
+  margin: 0px auto;
+  padding-top: 50px;
 }
 
 .wrapper_contacts {
-  padding-top: 70px;
-  width: 31%;
-  float: right;
+  width: 33.3333%;
+  float: left;
 }
 
 .contact_form {
+  width: 33.3333%;
   float: left;
-  width: 31%;
-  padding-top: 30px;
 }
+
 p {
 text-indent: 12px;
 }
+
 .divmain_about {
   width: 965px;
   text-align:justify;  
