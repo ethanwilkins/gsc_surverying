@@ -67,8 +67,10 @@
 }
 
 .services_header {
-  position: relative;
-  top: 25px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .service_dialog_link_container {
@@ -80,7 +82,7 @@
 .service_link_txt {
   width: 75%;
   color: white;
-  font-size: 17.5;
+  font-size: 20px;
 }
 
 .service_dialog_link {
@@ -94,7 +96,7 @@
 
 .service_dialog_links {
   position: relative;
-  bottom: 175px;
+  bottom: 230px;
   width: 100%;
 }
 
@@ -185,6 +187,16 @@
   position: relative;
 }
 
+.section_part_services {
+  width: 100%;
+  min-height: 500px;
+  background: rgb(214, 216, 219);
+  color: DarkBlue;
+  text-align: center;
+  position: relative;
+  overflow: auto;
+  visibility: visible;
+}
 .section_part_contact_us {
   min-height: 600px;
   background: white;
@@ -204,7 +216,9 @@
   width: 31%;
   padding-top: 30px;
 }
-
+p {
+text-indent: 12px;
+}
 .divmain_about {
   width: 965px;
   text-align:justify;  
