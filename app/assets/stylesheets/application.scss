@@ -97,8 +97,8 @@ textarea {
   float: left;
   height: 70px;
   padding-top: 2px;
-  padding-left: 45px;
-  padding-right: 40px;
+  padding-left: 30px;
+  padding-right: 0px;
 }
 
 .nav_section {
@@ -203,18 +203,26 @@ textarea {
 
 @media screen and (max-width: 1350px) {
   .nav_bar {
-    visibility: hidden;
+    visibility: visible;
 }
 
   body {}
 }
 
 @media screen and (max-width: 975px) {
-  .nav_bar {
+  body {}
+
+ .nav_menu_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+ .nav_bar {
     visibility: hidden;
   }
   .nav_menu {
     visibility: visible;
+    background-color: LightGray;
   }
-  body {}
 }
