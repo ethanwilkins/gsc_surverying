@@ -266,19 +266,20 @@ font-size: 20px;
     font-size: 14px;
     color: DarkBlue;
     font-weight: bold;
-    width: 90%
+    width: 100%
   }
   .divmain_about {
-    width: 90%
+    width: 100%
   }
   .contact_form {
     float: left;
-    width: 98%;
+    width: 100%;
     padding-top: 30px;
 	}
 	.google_maps {
-	  width: 200px;
-	  margin: 0 auto;
+          margin: 0px auto;
+          float: none;
+	  width: 100%;
 	}
 	.social_icon {
 	  width: 65%;
@@ -292,7 +293,7 @@ font-size: 20px;
 	}
   .wrapper_contacts {
     padding-top: 70px;
-    width: 98%;
+    width: 100%;
     float: right;
   }
   .section_part_contact_us {

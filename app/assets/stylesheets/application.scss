@@ -49,11 +49,8 @@ html {
 
 // can just use css medie rule to show elongated version of image instead
 body {
-  margin: 0;
-  background-image: url("/images/backgrounds/red.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
+  background: DarkGray;
+  font-family: 'Hind Madurai';font-size: 22px;
 }
 
 a {
@@ -205,9 +202,11 @@ textarea {
 }
 
 @media screen and (max-width: 1350px) {
-  body {
-    background-image: url("/images/backgrounds/red_middle.jpg");
-  }
+  .nav_bar {
+    visibility: hidden;
+}
+
+  body {}
 }
 
 @media screen and (max-width: 975px) {
@@ -217,7 +216,5 @@ textarea {
   .nav_menu {
     visibility: visible;
   }
-  body {
-    background-image: url("/images/backgrounds/red_phone.jpg");
-  }
+  body {}
 }
