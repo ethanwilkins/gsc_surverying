@@ -80,8 +80,12 @@ textarea {
   height: 80px;
   top: 0px;
   left: 0px;
-  z-index: 3;
+  z-index: 99;
 }
+
+.nav_menu {
+  z-index: 99;
+  }
 
 .nav_spacing {
   height: 55px;
