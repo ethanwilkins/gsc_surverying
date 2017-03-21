@@ -27,7 +27,7 @@
   margin: 25% auto;
   font: 30px;
 }
-.section_part_projects{
+.section_part_projects {
   width:100%;
   min-height: 580px;
   background-image: url("/images/projects.jpg");
@@ -104,7 +104,6 @@
   width: 75%;
   color: white;
   font-size: 20px;
-  
 }
 
 .service_link_txt:hover {
@@ -255,10 +254,8 @@ font-size: 20px;
   .services_img_container {
     width: 50%;
   }
-  .services_img_txt {
-    bottom: 100px;
-    width: 50%;
-    font-size: 15px;
+  .service_link_txt {
+    font-size: 14px;
   }
   .div2_project {
     border: 0px;
