@@ -100,6 +100,12 @@
   color: white;
 }
 
+.service_dialog_link_container_1 {
+  float: left;
+  width: 25%;
+  color: white;
+}
+
 .service_link_txt {
   width: 75%;
   color: white;
@@ -160,6 +166,8 @@
 .google_maps {
   width: 33.3333%;
   float: left;
+  position: relative;
+  bottom: 75px;
 }
 
 .company_emails {
@@ -189,7 +197,7 @@
 
 .section_part_contact_us {
   min-height: 580px;
-  background: white;
+  background: rgb(214, 216, 219);
   color: Darkblue;
   text-align: center;
 }
@@ -202,11 +210,15 @@
 .wrapper_contacts {
   width: 33.3333%;
   float: left;
+  position: relative;
+  bottom: 75px;
 }
 
 .contact_form {
   width: 33.3333%;
   float: left;
+  position: relative;
+  bottom: 75px;
 }
 
 p {
@@ -251,12 +263,41 @@ font-size: 20px;
 #contact_us_section {}
 
 @media screen and (max-width: 975px) {
+  .about_us_body {
+  width: 85%;
+  float: none;
+  margin: 0px auto;
+  }
+.div1_about {
+        img {
+                margin: 0px auto;
+                float: none;
+                width: 100%;
+                padding-bottom: 30px;
+                }
+      
+}
   .services_img_container {
     width: 50%;
   }
   .service_link_txt {
     font-size: 14px;
   }
+  .service_dialog_link_container {
+    float: left;
+    width: 50%;
+    color: white;
+    padding-bottom: 50px;
+    bottom: 100px;
+    position: relative;
+}
+  .service_dialog_link_container_1 {
+    float: left;
+    width: 50%;
+    color: white;
+    bottom: 100px;
+    position: relative;
+}
   .div2_project {
     border: 0px;
   }
@@ -275,21 +316,21 @@ font-size: 20px;
   .contact_form {
     float: left;
     width: 100%;
-    padding-top: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
 	}
 	.google_maps {
-          margin: 0px auto;
-          float: none;
+    margin: 0px auto;
+    float: none;
 	  width: 100%;
+	  padding-top: 100px;
 	}
-	.social_icon {
-	  width: 65%;
-	}
+
 	.company_emails {
 	font-size: 25px;
 	}
 	#email_link {
-	color: darkblue;
+	color: rgb(66, 134, 244);
 	font-size: 20px;
 	}
   .wrapper_contacts {
