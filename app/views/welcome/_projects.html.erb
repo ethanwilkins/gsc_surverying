@@ -1,6 +1,6 @@
 <div class="section_part_projects" id="projects_section" >
   
-   <h2 class="projects_h2" align= "center">Projects</h2>
+  <h2 class="projects_h2" align="center">Projects</h2>
   <% for project in @projects %>
     <%= link_to projects_dialog_path(project.tag), remote: true do %>
       <div class="project_container">
@@ -8,7 +8,7 @@
           <%= project.title %>
         </p>
         <div
-          class="<%= justified_body project %> project_body <%= @projects.last.eql?(project) ? nil : 'project_body_border'  %>">
+          class="<%= justified_body project %> project_body">
           <%= project.body %>
         </div>
       </div>
