@@ -264,19 +264,14 @@ font-size: 20px;
 
 @media screen and (max-width: 975px) {
   .about_us_body {
-  width: 85%;
-  float: none;
-  margin: 0px auto;
+    width: 85%;
+    margin: 0px auto;
   }
-.div1_about {
-        img {
-                margin: 0px auto;
-                float: none;
-                width: 100%;
-                padding-bottom: 30px;
-                }
-      
-}
+  .div1_about {
+    img {
+      width: 50%;
+    }
+  }
   .services_img_container {
     width: 50%;
   }
@@ -325,13 +320,12 @@ font-size: 20px;
 	  width: 100%;
 	  padding-top: 100px;
 	}
-
 	.company_emails {
-	font-size: 25px;
+	  font-size: 25px;
 	}
 	#email_link {
-	color: rgb(66, 134, 244);
-	font-size: 20px;
+	  color: rgb(66, 134, 244);
+	  font-size: 20px;
 	}
   .wrapper_contacts {
     padding-top: 70px;
