@@ -221,34 +221,29 @@
   bottom: 75px;
 }
 
-p {
-text-indent: 12px;
-}
-
 .divmain_about {
   width: 965px;
-  text-align:justify;  
-  text-justify:inter-word
+  text-align: justify;
+}
+
+.about_us_body {
+  font-size: 20px;
+  text-indent: 25px;
 }
 
 .about_us_photo {
-  width: 290px;
   padding: 0px 30px;
   float: right;
-
 }
 
 .div1_about {
-        img {
-                float: right;
-                margin: 5px;
-                }
-       font-size: 20px;
+  img {
+    float: right;
+    margin: 5px;
+  }
 }
 
-.div2_about {
-font-size: 20px;
-}
+.div2_about {}
 
 #about_us_section {
 
@@ -266,6 +261,7 @@ font-size: 20px;
   .about_us_body {
     width: 85%;
     margin: 0px auto;
+    font-size: 16px;
   }
   .div1_about {
     img {
@@ -298,12 +294,6 @@ font-size: 20px;
   }
   .div_project {
     height: 1000px;
-  }
-  .about_us_text_1 {
-    font-size: 14px;
-    color: DarkBlue;
-    font-weight: bold;
-    width: 100%
   }
   .divmain_about {
     width: 100%
