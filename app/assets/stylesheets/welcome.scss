@@ -19,7 +19,8 @@
   height: 100%;
   background: black;
   padding-top: 100px;
-  z-index: 4;
+  z-index: 21;
+  color: white;
 }
 
 .dialog_text {
@@ -27,6 +28,7 @@
   margin: 25% auto;
   font: 30px;
 }
+
 .section_part_projects {
   width:100%;
   min-height: 580px;

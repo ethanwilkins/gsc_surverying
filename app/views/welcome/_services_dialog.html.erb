@@ -1,8 +1,16 @@
 <div class="dialog_modal" id="dialog_modal">
   <div align="center">
-    <%= link_to '<i class="fa fa-times"></i>'.html_safe, close_dialog_path, remote: true, class: :top_right_link %>
+    <%= link_to '<i class="fa fa-times fa-2x"></i>'.html_safe,close_dialog_path,
+      remote: true, class: "top_right_link white_link" %>
     <% case service %>
       <% when "1" %>
+        <style>
+          .dialog_modal {
+            background-image: url("/images/construction.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
         <p>
           Heavy Civil
         </p>
@@ -19,6 +27,14 @@
           Utilities Layout Asbuilt
         </p>
       <% when "2" %>
+        <style>
+          .dialog_modal {
+            background-image: url("/images/survey_background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: black;
+          }
+        </style>
         <p>
           Boundary
         </p>
@@ -56,6 +72,13 @@
           Municipal, County, Sate & Federal
         </p>
       <% when "3" %>
+        <style>
+          .dialog_modal {
+            background-image: url("/images/construction.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
         <p>
           Topographic
         </p>
@@ -84,6 +107,13 @@
           Agriculture Studies
         </p>
       <% when "4" %>
+        <style>
+          .dialog_modal {
+            background-image: url("/images/construction.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+        </style>
         <p>
           Machine Control DTM (Digital Terrain Model) Files
         </p>
