@@ -35,13 +35,20 @@
   background-image: url("/images/projects.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: White;
+}
+
+.project_container {  
+  font-size: 18px;
+  color: White;
+  margin: 0px 10px 0px 30px;
 }
 
 .projects_h2 {
+  color: DarkBlue;
   margin: 0px auto;
   padding-top: 50px;
-  color:darkblue;
-
 }
 
 .div_project {
@@ -51,9 +58,12 @@
   text-align: center;
   position: relative;
 }
+.project_body{ 
+  color: White;
+}
 
 .div1_project {
-  color: DarkBlue;
+  color: white;
   display: inline-block;
   width: 350px;
   margin: 0px;
@@ -62,7 +72,7 @@
 }
 
 .div2_project {
-  color: DarkBlue;
+  color: white;
   display: inline-block;
   width: 350px;
   margin: 0px;
@@ -72,7 +82,7 @@
 }
 
 .div3_project {
-  color: DarkBlue;
+  color: white;
   display: inline-block;
   width: 450px;
   margin: 2px;
