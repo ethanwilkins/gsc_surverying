@@ -15,6 +15,11 @@
             <%= link_to "Edit", edit_post_path(image) if admin? %>
           </div>
         <% end %>
+        <% if @project_images.empty? %>
+          <p align="center">
+            There aren't any images for this project.
+          <p>
+        <% end %>
         <%= link_to "Add another image",
           edit_post_by_tag_path(tag: "#{@project.tag + '_img' + (Post.all.size + 1).to_s}", project: @project.tag) %>
     <% end %>
