@@ -5,9 +5,6 @@
   <% for project in @projects %>
     <%= link_to projects_dialog_path(project.tag), remote: true do %>
       <div class="project_container">
-        <p class="project_title">
-          <%= project.title %>
-        </p>
         <div
           class="<%= justified_body project %> project_body">
           <%= project.body %>
