@@ -282,6 +282,10 @@
 #links_section {}
 
 @media screen and (max-width: 975px) {
+  .links_container {
+    width: 75%;
+  }
+  
   .about_us_body {
     width: 85%;
     margin: 0px auto;
