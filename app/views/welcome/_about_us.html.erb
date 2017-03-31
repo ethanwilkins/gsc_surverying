@@ -5,11 +5,6 @@
     <div class= "divmain_about">
       <div class= "div1_about">
         <div class= "about_us_image"> <%= image_tag "/images/little_surveyor.png", class: :about_us_photo %> </div>
-        <p class= "about_us_body"><%= post_text("about_us_p1") %> <%= link_to "Edit", edit_post_by_tag_path("about_us_p1") if admin? %></p>
-        <p class= "about_us_body"><%= post_text("about_us_p2") %> <%= link_to "Edit", edit_post_by_tag_path("about_us_p2") if admin? %></p>
-      </div>
-      <div class= "div2_about">
-        <p class= "about_us_body"><%= post_text("about_us_p3") %> <%= link_to "Edit", edit_post_by_tag_path("about_us_p3") if admin? %></p>
         </br>
       </div>
     </div>
