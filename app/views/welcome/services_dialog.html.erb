@@ -10,21 +10,11 @@
             background-size: cover;
           }
         </style>
-        <div class="service_dialog_txt">
-          Heavy Civil
-        </div>
-        <div class="service_dialog_txt">
-          Highways
-        </div>
-        <div class="service_dialog_txt">
-          Bridges
-        </div>
-        <div class="service_dialog_txt">
-          Commercial Sites
-        </div>
-        <div class="service_dialog_txt">
-          Utilities Layout & Asbuilt
-        </div>
+        <% ["Heavy Civil", "Highways", "Bridges", "Commercial Sites", "Utilities Layout & Asbuilt"].each do |service| %>
+          <div class="service_dialog_txt">
+            <%= service %>
+          </div>
+        <% end %>
       <% when "2" %>
         <style>
           .dialog_modal {
@@ -33,42 +23,14 @@
             background-size: cover;
           }
         </style>
-        <div class="service_dialog_txt">
-          Boundary
-        </div>
-        <div class="service_dialog_txt">
-          Topographic
-        </div>
-        <div class="service_dialog_txt">
-          ALTA/ACSM
-        </div>
-        <div class="service_dialog_txt">
-          Location Surveys
-        </div>
-        <div class="service_dialog_txt">
-          Geodetic & Site Survey Control
-        </div>
-        <div class="service_dialog_txt">
-          Right-of-way, Easements & Utility Corridors
-        </div>
-        <div class="service_dialog_txt">
-          Residential Subdivisions
-        </div>
-        <div class="service_dialog_txt">
-          GIS Data Acquisition
-        </div>
-        <div class="service_dialog_txt">
-          Commercial Developments
-        </div>
-        <div class="service_dialog_txt">
-          Industrial & Airports
-        </div>
-        <div class="service_dialog_txt">
-          Medical & Education Facilities
-        </div>
-        <div class="service_dialog_txt">
-          Municipal, County, Sate & Federal
-        </div>
+        <% ["Boundary", "Topographic", "ALTA/ACSM", "Location Surveys", "Geodetic & Site Survey Control",
+          "Right-of-way, Easements & Utility Corridors", "Residential Subdivisions", "GIS Data Acquisition",
+          "Commercial Developments", "Industrial & Airports", "Medical & Education Facilities",
+          "Municipal, County, Sate & Federal"].each do |service| %>
+          <div class="service_dialog_txt">
+            <%= service %>
+          </div>
+        <% end %>
       <% when "3" %>
         <style>
           .dialog_modal {
@@ -77,33 +39,13 @@
             background-size: cover;
           }
         </style>
-        <div class="service_dialog_txt">
-          Topographic
-        </div>
-        <div class="service_dialog_txt">
-          Aerial Imaging
-        </div>
-        <div class="service_dialog_txt">
-          Structure Surveys & Inspections
-        </div>
-        <div class="service_dialog_txt">
-          Earthwork, landfill, stock pile volume quantities
-        </div>
-        <div class="service_dialog_txt">
-          Highways & Bridges
-        </div>
-        <div class="service_dialog_txt">
-          Solar Farms
-        </div>
-        <div class="service_dialog_txt">
-          Infrared Imaging
-        </div>
-        <div class="service_dialog_txt">
-          Forensic & Accident Sites
-        </div>
-        <div class="service_dialog_txt">
-          Agriculture Studies
-        </div>
+        <% ["Topographic", "Aerial Imaging", "Structure Surveys & Inspections",
+          "Earthwork, landfill, stock pile volume quantities", "Highways & Bridges", "Solar Farms", "Infrared Imaging",
+          "Forensic & Accident Sites", "Agriculture Studies"].each do |service| %>
+          <div class="service_dialog_txt">
+            <%= service %>
+          </div>
+        <% end %>
       <% when "4" %>
         <style>
           .dialog_modal {
@@ -112,19 +54,12 @@
             background-size: cover;
           }
         </style>
-        <div class="service_dialog_txt">
-          Machine Control DTM (Digital Terrain Model) Files
-        </div>
-        <div class="service_dialog_txt">
-          Cut/Fill Maps
-        </div>
-        <div class="service_dialog_txt">
-          Highways
-        </div>
-        <div class="service_dialog_txt">
-          Commercial Sites
-        </div>
+        <% ["Machine Control DTM (Digital Terrain Model) Files", "Cut/Fill Maps", "Highways",
+          "Commercial Sites"].each do |service| %>
+          <div class="service_dialog_txt">
+            <%= service %>
+          </div>
+        <% end %>
     <% end %>
   </div>
-  <div id="project_img_anchor"></div>
 </div>
