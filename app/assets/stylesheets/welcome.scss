@@ -290,6 +290,9 @@
 #links_section {}
 
 @media screen and (max-width: 975px) {
+  .service_dialog {
+    padding-top: 50px;
+  }
   .service_dialog_txt {
     width: 50%;
     padding-bottom: 25px;
