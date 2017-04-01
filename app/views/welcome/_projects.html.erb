@@ -3,7 +3,7 @@
   <h2 class="projects_h2" align="center">Projects</h2>
   
   <% for project in @projects %>
-    <%= link_to projects_dialog_path(project.tag), remote: true do %>
+    <%= link_to projects_dialog_path(project.tag) do %>
       <div class="project_container">
         <div
           class="<%= justified_body project %> project_body">
