@@ -18,7 +18,6 @@
   width: 100%;
   height: 100%;
   background: black;
-  padding-top: 100px;
   z-index: 21;
   color: white;
 }
@@ -95,7 +94,16 @@
   background-image: url("/images/construction.jpg");
   background-size: cover;
   background-repeat: no-repeat;
- 
+}
+
+.service_dialog {
+  padding-top: 250px;
+}
+
+.service_dialog_txt {
+  float: left;
+  width: 25%;
+  padding-bottom: 50px;
 }
 
 .services_header {
@@ -282,10 +290,13 @@
 #links_section {}
 
 @media screen and (max-width: 975px) {
+  .service_dialog_txt {
+    width: 50%;
+    padding-bottom: 25px;
+  }
   .links_container {
     width: 75%;
   }
-  
   .about_us_body {
     width: 85%;
     margin: 0px auto;
