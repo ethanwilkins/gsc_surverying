@@ -75,38 +75,8 @@
   background: white;
 }
 
-.clients_logos {
-  -webkit-column-count: 4; /* Chrome, Safari, Opera */
-  -moz-column-count: 4; /* Firefox */
-  column-count: 4;
-  -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 30px; /* Firefox */
-  column-gap: 30px;
-}
-
-.cl_logo {
-  width: 70%;
-  margin: 20px;
-}
-
-/**********************************************************************************************************/
-
 @media screen and (max-width: 975px) {
   .project_body {
     width: 85%;
-  }
-  .clients_logos {
-    -webkit-column-count: 2; /* Chrome, Safari, Opera */
-    -moz-column-count: 2; /* Firefox */
-    column-count: 2;
-    -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 5px; /* Firefox */
-    column-gap: 5px;
-  }
-
-  .cl_logo { 
-   height: 30%;
-   margin: 5px;
-   filter: none;
   }
 }
