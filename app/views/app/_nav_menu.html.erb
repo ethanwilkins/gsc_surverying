@@ -1,6 +1,9 @@
 <div class="nav_menu">
-  <%= link_to '<i class="fa fa-bars fa-2x"></i>'.html_safe, toggle_menu_path,
-    id: :toggle_menu_link, remote: true, title: "Main menu" %>
+  <%= link_to toggle_menu_path, remote: true, title: "Main menu" do %>
+    <div id="toggle_menu_link">
+      <i class="fa fa-bars fa-2x"></i>
+    </div>
+  <% end %>
     
     
   <%= link_to (@you_are_home ? scroll_to_top_path : root_url), remote: @you_are_home do %>
@@ -8,7 +11,7 @@
   <% end %>
 
   <div class="nav_menu_links" id="nav_menu" hidden>
-    <% for section in ["About Us", "Services", "Projects", "Clients", "Contact Us", "Links"] %>
+    <% for section in ["Home", "About Us", "Services", "Projects", "Clients", "Links", "Contact Us"] %>
       <% section_id = section.downcase.gsub(" ", "_") + "_section" %>
       <%= link_to section, focus_to_section_path(section_id: section_id, close_menu: "1"),
         remote: true, class: :standard_nav_menu_link %>

@@ -54,12 +54,15 @@
 }
 
 #toggle_menu_link {
-	position: fixed;
-	top: 27.5px;
-	left: 12.5px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 50px;
+	height: 100%;
 	color: black;
 	font-size: 13px;
 	z-index: 2;
+	padding: 27.5px 10px;
 }
 
 .nav_menu_links {
