@@ -2,10 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.signed_in_as {
+.admin_nav_link {
   position: fixed;
-  top: 15px;
+  top: 27.5px;
   right: 10px;
+  color: darkblue;
 }
 
 .log_out_nav_link {
