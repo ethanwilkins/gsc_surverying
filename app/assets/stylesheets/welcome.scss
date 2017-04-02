@@ -313,9 +313,11 @@
   .services_img_container {
     width: 50%;
   }
-  .service_link_txt:hover {}
+  .service_link_txt:hover {
+    font-size: 17.5px;
+  }
   .service_link_txt {
-    font-size: 14px;
+    font-size: 15px;
   }
   .service_dialog_link_container {
     float: left;
