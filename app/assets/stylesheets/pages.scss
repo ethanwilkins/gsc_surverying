@@ -35,12 +35,12 @@
 }
 
 .standard_nav_menu_link {
-	color: white;
+	color: DarkBlue;
 	font-size: 25px;
 	display: block;
 	padding: 7.5px 5px;
-	background: DarkBlue;
-	border-bottom: 2px solid blue;
+	background: rgb(214, 216, 219);
+	border-bottom: 2px solid DarkBlue;
 }
 
 #menu_link_container {
@@ -62,18 +62,18 @@
 	z-index: 2;
 }
 
-
-@media screen and (max-width: 1350px) {
-
-  .nav_menu {
-    height: 80px;
-    }
+.nav_menu_links {
+  padding-top: 12.5px;
 }
 
+@media screen and (max-width: 1350px) {
+  .nav_menu {
+    height: 80px;
+  }
+}
 
 @media screen and (max-width: 975px) {
-
   .nav_menu {
-   height: 80px;
-   }
+    height: 80px;
+  }
 }

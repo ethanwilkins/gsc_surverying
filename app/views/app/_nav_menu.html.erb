@@ -7,8 +7,8 @@
     <%= image_tag "logos/logo.png", class: :nav_menu_logo %>
   <% end %>
 
-  <div id="nav_menu" hidden>
-    <% for section in ["About Us", "Services", "Projects", "Clients", "Contact Us"] %>
+  <div class="nav_menu_links" id="nav_menu" hidden>
+    <% for section in ["About Us", "Services", "Projects", "Clients", "Contact Us", "Links"] %>
       <% section_id = section.downcase.gsub(" ", "_") + "_section" %>
       <%= link_to section, focus_to_section_path(section_id: section_id, close_menu: "1"),
         remote: true, class: :standard_nav_menu_link %>
