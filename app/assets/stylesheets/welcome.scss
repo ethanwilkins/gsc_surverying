@@ -281,14 +281,13 @@
   -webkit-column-count: 4; /* Chrome, Safari, Opera */
   -moz-column-count: 4; /* Firefox */
   column-count: 4;
-  -webkit-column-gap: 30px; /* Chrome, Safari, Opera */
-  -moz-column-gap: 30px; /* Firefox */
-  column-gap: 30px;
+  margin: 0px auto;
+  width: 70%;
 }
 
-.cl_logo {
-  width: 70%;
-  margin: 20px;
+.clients_logo {
+  width: 75%;
+  margin: 10px;
 }
 
 #about_us_section {}
@@ -388,14 +387,11 @@
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
-    -webkit-column-gap: 5px; /* Chrome, Safari, Opera */
-    -moz-column-gap: 5px; /* Firefox */
-    column-gap: 5px;
+    width: 85%;
   }
 
-  .cl_logo { 
-   height: 30%;
-   margin: 5px;
-   filter: none;
+  .clients_logo { 
+    width: 95%;
+    margin: 12.5px;
   }
 }
