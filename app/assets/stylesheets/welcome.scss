@@ -290,6 +290,11 @@
   margin: 10px;
 }
 
+.clients_logo_wooten {
+  width: 35%;
+  margin: 15px;
+}
+
 .clients_h2 {
   padding: 25px 0px;
 }
@@ -390,9 +395,11 @@
     column-count: 2;
     width: 85%;
   }
-
   .clients_logo { 
     width: 95%;
     margin: 12.5px;
+  }
+  .clients_logo_wooten {
+    width: 75%;
   }
 }
