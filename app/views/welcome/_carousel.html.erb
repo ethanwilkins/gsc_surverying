@@ -11,23 +11,28 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag "cover_1_bridge.jpg", class: :carousel_image %>
+      <%= image_tag post_img("carousel_img_1"), class: :carousel_image %>
+      <%= link_to "Edit", edit_post_by_tag_path("carousel_img_1"), class: :edit_carousel_img_link if admin? %>
     </div>
 
     <div class="item">
-      <%= image_tag "uav/uav_4.jpg", class: :carousel_image %>
+      <%= image_tag post_img("carousel_img_2"), class: :carousel_image %>
+      <%= link_to "Edit", edit_post_by_tag_path("carousel_img_2"), class: :edit_carousel_img_link if admin? %>
     </div>
     
     <div class="item">
-      <%= image_tag "drone1.jpg", class: :carousel_image %>
+      <%= image_tag post_img("carousel_img_3"), class: :carousel_image %>
+      <%= link_to "Edit", edit_post_by_tag_path("carousel_img_3"), class: :edit_carousel_img_link if admin? %>
     </div>
 
     <div class="item">
-      <%= image_tag "uav/uav_3.jpg", class: :carousel_image %>
+      <%= image_tag post_img("carousel_img_4"), class: :carousel_image %>
+      <%= link_to "Edit", edit_post_by_tag_path("carousel_img_4"), class: :edit_carousel_img_link if admin? %>
     </div>
 
     <div class="item">
-      <%= image_tag "uav/uav_5.jpg", class: :carousel_image %>
+      <%= image_tag post_img("carousel_img_5"), class: :carousel_image %>
+      <%= link_to "Edit", edit_post_by_tag_path("carousel_img_5"), class: :edit_carousel_img_link if admin? %>
     </div>
   </div>
 
