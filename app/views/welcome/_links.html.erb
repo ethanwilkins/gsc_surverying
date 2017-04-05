@@ -4,45 +4,42 @@
   </h2>
   
   <div class="links_container" align="left">
-   </br>
-   <ul>
-    <li>
-      <a class="links_link" href="https://ncbels.org">NC Board of Examiners for Engineers and Land Surveyors (NCBELS)</a>
-    </li>
-    
-    <li>
-      <a class="links_link" href="https://www.raleighnc.gov">City of Raleigh</a>
-    </li>
-    
-    <li>
-      <a class="links_link" href="http://www.wakegov.com">Wake County</a>
-    </li>
-    
-    <li>
-      <a class="links_link" href="http://www.ncfloodmaps.com">NC Floodplain Mapping Program</a>
-    </li>
-    
-    <li>
-      <a class="links_link" href="http://www.msc.fema.gov/portal/search?AddressQuery=raleigh%2C%20nc#searchresultsanchor">
-        FEMA Flood Maps
-      </a>
-    </li>
-    
-    <li>
-      <a class="links_link" href="http://www.ncsurveyors.com">NC Society of Surveyors (NCSS)</a>
-    </li>
-    
-    <li>
-      <a class="links_link" href="http://www.ncgs.state.nc.us">NC Geodectic Surveyors</a>
-    </li>
-    
-    <li>
-      <a class="links_link" href="http://www.gounmanned.com">Go Unmanned UAV Specialist</a>
-    </li>
-    
-    <li>
-      <a class="links_link" href="http://www.benchmarksupply.com">Benchmark Tool & Supply</a>
-    </li>
-  </ul>
+    <%= link_to "http://ncbels.org", target: :_blank, class: :links_link do %>
+      <%= image_tag "links/ncboe.png", class: :links_link_img %>
+      NC Board of Examiners for Engineers and Land Surveyors (NCBELS)
+    <% end %>
+    <%= link_to "http://www.raleighnc.gov", target: :_blank, class: :links_link do %>
+      <%= image_tag "links/cor.png", class: :links_link_img %>
+      City of Raleigh
+    <% end %>
+    <%= link_to "http://www.wakegov.com", target: :_blank, class: :links_link do %>
+      <%= image_tag "links/wake.png", class: :links_link_img %>
+      Wake County
+    <% end %>
+    <%= link_to "http://www.ncfloodmaps.com", target: :_blank, class: :links_link do %>
+      <%= image_tag "links/ncseal.jpg", class: :links_link_img %>
+      NC Floodplain Mapping Program
+    <% end %>
+    <%= link_to "http://www.msc.fema.gov/portal/search?AddressQuery=raleigh%2C%20nc#searchresultsanchor",
+      target: :_blank, class: :links_link do %>
+      <%= image_tag "links/fema.png", class: :links_link_img %>
+      FEMA Flood Maps
+    <% end %>
+    <%= link_to "http://www.ncsurveyors.com", target: :_blank, class: :links_link do %>
+      <%= image_tag "links/ncss.png", class: :links_link_img %>
+      NC Society of Surveyors (NCSS)
+    <% end %>
+    <%= link_to "http://www.ncgs.state.nc.us", target: :_blank, class: :links_link do %>
+      <%= image_tag "links/geodectic.png", class: :links_link_img %>
+      NC Geodectic Surveyors
+    <% end %>
+    <%= link_to "http://www.gounmanned.com", target: :_blank, class: :links_link do %>
+      <%= image_tag "links/go.png", class: :links_link_img %>
+      Go Unmanned UAV Specialist
+    <% end %>
+    <%= link_to "http://www.benchmarksupply.com", target: :_blank, class: :links_link do %>
+      <%= image_tag "links/supply.png", class: :links_link_img %>
+      Benchmark Tool & Supply
+    <% end %>
   </div><!-- links_container end -->
 </div><!-- section_part_links -->

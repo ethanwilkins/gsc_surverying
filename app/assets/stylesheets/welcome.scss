@@ -265,16 +265,24 @@
   text-align: center;
   color: darkblue;
   padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 .links_container {
   margin: 0px auto;
-  width: 30%;
+  width: 35%;
   color: darkblue;
 }
 
 .links_link {
   color: rgb(66, 134, 244);
+  display: block;
+  padding-bottom: 7.5px;
+}
+
+.links_link_img {
+  width: 25px;
+  padding-right: 5px;
 }
 
 .clients_logos {

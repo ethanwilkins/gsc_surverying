@@ -1,0 +1,34 @@
+Done:
+  admin ability to edit each carousel image
+
+  get rid of space between contact us and links
+
+  resize client images so they don't take up more than the whole page
+
+  remove indentation from about us
+
+  services image remove faded
+
+  less space between projects title and projects
+
+  make service dialogs separate pages
+
+  text in service dialogs go across the screen
+
+  make st wooten logo much larger, more apparent in clients
+
+  remove white backgrounds from client logos, add alpha
+
+  office address and phone number in contact us, under emails
+
+  add explicit home page link "Home"
+
+To do:
+
+  make services links fit on page for all screen heights
+
+  opacity is meant where grey scale was used link in the services dialog
+
+  js to adjust height of each section div
+
+  remove raw links from links and have logos as a thumbnail for each link
