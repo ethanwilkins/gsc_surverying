@@ -56,7 +56,7 @@
 .projects_h2 {
   color: DarkBlue;
   padding-top: 12.5px;
-  padding-bottom: 15px;
+  padding-bottom: 45px;
 }
 
 .div_project {
@@ -300,7 +300,7 @@
 
 @media screen and (max-width: 975px) {
   .projects_h2 {
-    padding-bottom: 45px;
+    padding-bottom: 15px;
   }
   .project_container {
     width: 100%;
