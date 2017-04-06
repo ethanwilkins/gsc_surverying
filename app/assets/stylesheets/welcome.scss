@@ -2,6 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@mixin section_part {
+  width: 100%;
+  min-height: 580px;
+  background: rgb(214, 216, 219);
+  color: DarkBlue;
+  text-align: center;
+  position: relative;
+  overflow: auto;
+}
+
 .carousel_image {
   width: 100%;
 }
@@ -147,13 +157,7 @@
 }
 
 .section_part {
-  width: 100%;
-  min-height: 580px;
-  background: rgb(214, 216, 219);
-  color: DarkBlue;
-  text-align: center;
-  position: relative;
-  overflow: auto;
+  @include section_part;
 }
 
 .google_maps {
@@ -200,7 +204,7 @@
 }
 
 .divmain_about {
-  width: 965px;
+  width: 75%;
   text-align: justify;
 }
 
@@ -216,6 +220,7 @@
 .div1_about {
   img {
     float: right;
+    width: 35%;
     margin: 5px;
   }
 }
@@ -246,15 +251,15 @@
 }
 
 .clients_logos {
-  -webkit-column-count: 4; /* Chrome, Safari, Opera */
-  -moz-column-count: 4; /* Firefox */
-  column-count: 4;
+  -webkit-column-count: 5; /* Chrome, Safari, Opera */
+  -moz-column-count: 5; /* Firefox */
+  column-count: 5;
   margin: 0px auto;
-  width: 70%;
+  width: 85%;
 }
 
 .clients_logo {
-  width: 75%;
+  width: 70%;
   margin: 10px;
 }
 
