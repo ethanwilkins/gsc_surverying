@@ -38,9 +38,13 @@
   font: 30px;
 }
 
-.project_container {  
+.project_container {
+  padding-left: 30px;
+  padding-bottom: 5px;
+}
+
+.project_body {
   font-size: 14px;
-  margin: 0px 10px 0px 30px;
 }
 
 .projects_h2 {
@@ -56,10 +60,6 @@
   background: MidnightBlue;
   text-align: center;
   position: relative;
-}
-
-.project_body {
-  padding-bottom: 5px;
 }
 
 .div1_project {
