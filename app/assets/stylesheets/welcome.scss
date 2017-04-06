@@ -299,6 +299,10 @@
 #links_section {}
 
 @media screen and (max-width: 975px) {
+  .project_container {
+    width: 100%;
+    padding-bottom: 5px;
+  }
   .service_dialog {
     padding-top: 50px;
   }
