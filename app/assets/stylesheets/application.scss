@@ -205,14 +205,18 @@ textarea {
 @media screen and (max-width: 1350px) {
   .nav_bar {
     visibility: visible;
-}
-
-  body {}
+  }
+  
+  .nav_section {
+    width: 8.5%;
+  }
+  
+  .nav_section_text {
+    font-size: 17.75px;
+  }
 }
 
 @media screen and (max-width: 975px) {
-  body {}
-
  .nav_menu_logo {
     max-width: 70%;
     display: block;
