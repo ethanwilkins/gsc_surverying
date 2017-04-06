@@ -17,7 +17,7 @@ class WelcomeController < ApplicationController
     @project = params[:project]
     if @project.include? "project"
       @project = Post.find_by_tag(@project)
-      @project_images = Post.where(project: @project)
+      @project_images = Post.where(project: @project.tag)
     end
   end
   

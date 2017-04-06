@@ -129,6 +129,7 @@ textarea {
 .project_card {
   @include card;
   overflow: auto;
+  margin-top: 75px;
 }
 
 .project_img_card {
