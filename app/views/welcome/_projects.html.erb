@@ -3,9 +3,8 @@
   <div class="projects_container">
     <% for project in @projects %>
       <%= link_to projects_dialog_path(project.tag) do %>
-        <div class="project_container" align="left">
-          <div
-            class="<%= justified_body project %> project_body">
+        <div class="project_container">
+          <div class="project_body">
             <%= project.body %>
           </div>
           <%= link_to "Edit", edit_post_by_tag_path(project.tag) if admin? %>
