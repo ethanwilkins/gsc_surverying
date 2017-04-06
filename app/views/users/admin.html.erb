@@ -20,7 +20,9 @@
         <%= post.body %>
       </p>
       
-      <%= image_tag post.image, width: "95%" if post.image.present? %>
+      <p>
+        <%= image_tag post.image, width: "95%" if post.image.present? %>
+      </p>
     </div>
   <% end %>
 <% end %>
