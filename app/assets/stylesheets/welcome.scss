@@ -28,14 +28,6 @@
   font: 30px;
 }
 
-.section_part_projects {
-  width:100%;
-  min-height: 580px;
-  background-image: url("/images/projects.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .project_container {  
   font-size: 18px;
   margin: 0px 10px 0px 30px;
@@ -86,14 +78,6 @@
   margin: 2px;
   border: 0px;
   padding: 10px;
-}
-
-.section_part_services {
-  width:100%;
-  min-height: 580px;
-  background-image: url("/images/construction.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .service_dialog {
@@ -170,7 +154,6 @@
   text-align: center;
   position: relative;
   overflow: auto;
-  visibility: visible;
 }
 
 .google_maps {
@@ -309,9 +292,17 @@
 
 #about_us_section {}
 
-#services_section {}
+#services_section {
+  background-image: url("/images/construction.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-#projects_section {}
+#projects_section {
+  background-image: url("/images/projects.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 #clients_section {}
 
