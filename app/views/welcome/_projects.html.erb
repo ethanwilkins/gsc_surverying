@@ -2,11 +2,9 @@
   <h2 class="projects_h2" align="center">Projects</h2>
   <div class="projects_container">
     <% for project in @projects %>
-      <%= link_to projects_dialog_path(project.tag) do %>
+      <%= link_to projects_dialog_path(project.tag), style: "color:darkblue;" do %>
         <div class="project_container">
-          <div class="project_body">
-            <%= project.body %>
-          </div>
+          <%= project.body %>
           <%= link_to "Edit", edit_post_by_tag_path(project.tag) if admin? %>
         </div>
       <% end %>
