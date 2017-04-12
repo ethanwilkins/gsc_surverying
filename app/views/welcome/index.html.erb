@@ -16,15 +16,5 @@
 <%= render "welcome/links" %>
 
 <script>
-  window.onload = window.onresize = function () {
-    // gets screen height of current device
-    var screen_height = window.innerHeight - 60;
-    screen_height = screen_height.toString() + "px";
-    //$(".section_part").css("height", screen_height);
-    if (window.innerWidth > 975) {
-      $(".section_part").each(function(i, obj){
-        obj.style.height = screen_height;
-      });
-    }
-  }
+  <%= render "welcome/resize_sections.js" %>
 </script>

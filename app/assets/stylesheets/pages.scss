@@ -28,7 +28,7 @@
   position: fixed;
   background: rgb(214, 216, 219);
   width: 100%;
-  height: 65px;
+  height: 80px;
   top: 0px;
   left: 0px;
   z-index: 20;
@@ -69,8 +69,4 @@
   padding-top: 12.5px;
 }
 
-@media screen and (max-width: 975px) {
-  .nav_menu {
-    height: 80px;
-  }
-}
+@media screen and (max-width: 975px) {}
