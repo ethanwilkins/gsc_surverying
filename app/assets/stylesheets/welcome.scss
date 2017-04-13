@@ -108,14 +108,6 @@
   display: inline-block;
   vertical-align: top;
   margin: 35px 40px;
-  -webkit-transition-duration: 1s;
-     -moz-transition-duration: 1s;
-       -o-transition-duration: 1s;
-          transition-duration: 1s;
-}
-
-.service_dialog_txt:hover {
-  color: darkorange;
 }
 
 .services_header {
@@ -158,6 +150,7 @@
   position: absolute;
   width: 75%;
   bottom: 15%;
+  left: 12.5%;
 }
 
 .cover_image {
