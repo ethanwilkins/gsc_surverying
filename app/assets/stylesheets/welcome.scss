@@ -108,6 +108,14 @@
   display: inline-block;
   vertical-align: top;
   margin: 50px;
+  -webkit-transition-duration: 1s;
+     -moz-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.service_dialog_txt:hover {
+  color: darkorange;
 }
 
 .services_header {
