@@ -309,6 +309,15 @@
 
 #links_section {}
 
+@media screen and (min-width: 1650px) {
+  .divmain_about {
+    width: 60%;
+  }
+  .about_us_body {
+    font-size: 23.5px;
+  }
+}
+
 @media screen and (max-width: 975px) {
   .projects_h2 {
     padding-bottom: 15px;
