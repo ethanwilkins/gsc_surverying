@@ -110,6 +110,10 @@ textarea {
   padding-top: 28.5px;
   padding-bottom: 22px;
   color: DarkBlue;
+  -webkit-transition-duration: 1s;
+     -moz-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .nav_section_text {
@@ -117,9 +121,7 @@ textarea {
 }
 
 .nav_section:hover {
-  background: rgb(214, 216, 219);
   color: DarkOrange;
-  font-size: 25px;
 }
 
 .card {

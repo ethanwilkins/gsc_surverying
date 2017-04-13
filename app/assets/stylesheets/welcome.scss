@@ -101,7 +101,7 @@
 }
 
 .service_dialog {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .service_dialog_txt {
@@ -131,10 +131,14 @@
   width: 75%;
   color: white;
   font-size: 20px;
+  -webkit-transition-duration: 1s;
+     -moz-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .service_link_txt:hover {
-  //font-size: 22.5px;
+  color: darkorange;
 }
 
 .service_dialog_link {
@@ -309,8 +313,8 @@
     margin-top: 50px;
   }
   .service_dialog_txt {
-    width: 50%;
-    padding-bottom: 25px;
+    margin: 25px;
+    font-size: 20px;
   }
   .links_container {
     width: 75%;
