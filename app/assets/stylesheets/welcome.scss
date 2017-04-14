@@ -4,7 +4,7 @@
 
 @mixin section_part {
   width: 100%;
-  height: 580px;
+  min-height: 500px;
   background: rgb(214, 216, 219);
   color: DarkBlue;
   text-align: center;
@@ -310,9 +310,6 @@
 
 // for mobile
 @media screen and (max-width: 975px) {
-  .section_part {
-    min-height: 580px;
-  }
   .projects_h2 {
     padding-bottom: 15px;
   }
@@ -358,6 +355,11 @@
   .service_dialog_link_container {
     width: 50%;
     padding-bottom: 50px;
+  }
+  .service_dialog_links {
+    width: 100%;
+    bottom: 15%;
+    left: 0%;
   }
   .div2_project {
     border: 0px;
