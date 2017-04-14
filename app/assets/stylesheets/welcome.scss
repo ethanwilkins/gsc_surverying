@@ -308,7 +308,11 @@
   }
 }
 
+// for mobile
 @media screen and (max-width: 975px) {
+  .section_part {
+    min-height: 580px;
+  }
   .projects_h2 {
     padding-bottom: 15px;
   }
