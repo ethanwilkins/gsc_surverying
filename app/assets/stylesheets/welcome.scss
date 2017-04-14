@@ -4,7 +4,7 @@
 
 @mixin section_part {
   width: 100%;
-  min-height: 580px;
+  height: 580px;
   background: rgb(214, 216, 219);
   color: DarkBlue;
   text-align: center;
@@ -302,7 +302,11 @@
 
 #links_section {}
 
-@media screen and (max-width: 1150px) {}
+@media screen and (max-width: 1150px) {
+  .about_us_body {
+    font-size: 16px;
+  }
+}
 
 @media screen and (max-width: 975px) {
   .projects_h2 {
