@@ -182,14 +182,25 @@
   color: darkblue;
 }
 
-#email_link {
+.email_link {
   color: rgb(66, 134, 244);
   font-size: 20px;
+  display: block;
+  padding-bottom: 15px;
+  -webkit-transition-duration: 1s;
+     -moz-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
 
 }
 
-#email_link:hover {
+.email_link:hover {
   color: darkorange;
+}
+
+.office_details {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .contact_us_h2 {
