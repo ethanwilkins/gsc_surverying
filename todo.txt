@@ -1,34 +1,35 @@
-Done:
-  admin ability to edit each carousel image
+Home/Carousel
+  1: good
+  2: pond
+  3: good
+  4: bellhauer
+  5: 3 pipes
 
-  get rid of space between contact us and links
+About Us
+  Bottom text cut off by next screen
+  
+Services
+  Adjust for minimized screen
+  Move text up a little but still in dark
+  "Services We Provide"
+  text blocks closer together
+  
+Construction Surveying
+  Text does not need to fade
+  lower text
+  
+Traditional Land Surveying
+  NSPS
+  Change vertical margin between lines
+  
+UAV (Drone) and 3D Scanning
+  Change text color to go to background or get new background image
+  space text closer together
+  
+Clients
+  Black background for Fred Smith
+  remove key
 
-  resize client images so they don't take up more than the whole page
-
-  remove indentation from about us
-
-  services image remove faded
-
-  less space between projects title and projects
-
-  make service dialogs separate pages
-
-  text in service dialogs go across the screen
-
-  make st wooten logo much larger, more apparent in clients
-
-  remove white backgrounds from client logos, add alpha
-
-  office address and phone number in contact us, under emails
-
-  add explicit home page link "Home"
-
-To do:
-
-  make services links fit on page for all screen heights
-
-  opacity is meant where grey scale was used link in the services dialog
-
-  js to adjust height of each section div
-
-  remove raw links from links and have logos as a thumbnail for each link
+Contact Us
+  address/phone smaller text, half size
+  "O:  " before phone number, "O:" or just ":"?
