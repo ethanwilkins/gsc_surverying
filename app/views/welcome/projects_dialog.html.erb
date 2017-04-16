@@ -7,7 +7,7 @@
     </p>
     <% for image in @project_images %>
       <div class="project_img_container">
-        <%= link_to show_project_image_path(image.id), remote: true do %>
+        <%= link_to show_project_image_path(image.id) do %>
           <%= image_tag image.image, class: :project_img %>
         <% end %>
         <%= link_to "Edit", edit_post_path(image) if admin? %>

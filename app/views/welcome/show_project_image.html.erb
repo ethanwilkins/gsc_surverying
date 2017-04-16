@@ -1,0 +1,7 @@
+<div class="dialog_modal" id="dialog_modal">
+  <div class="card_spacer"></div>
+  <div class="card" align="center">
+    <%= link_to '<i class="fa fa-times"></i>'.html_safe, projects_dialog_path(@image.project), class: :top_right_link %>
+    <%= image_tag @image.image, class: :project_img_expanded %>
+  </div>
+</div>

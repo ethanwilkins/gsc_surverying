@@ -2,34 +2,36 @@ Home/Carousel
   1: good
   2: pond
   3: good
-  4: bellhauer
+  4: bellhauer - still need this
   5: 3 pipes
+  
+UAV (Drone) and 3D Scanning
+  Change text color to go to background or get new background image
+    still need this image if so
+  space text closer together
 
-About Us
+Contact Us
+  address/phone smaller text, half size
+  "O:  " before phone number
+    "O:" or just ":"?
+
+About Us ✓
   Bottom text cut off by next screen
   
-Services
+Services ✓
   Adjust for minimized screen
   Move text up a little but still in dark
   "Services We Provide"
   text blocks closer together
   
-Construction Surveying
+Construction Surveying ✓
   Text does not need to fade
   lower text
   
-Traditional Land Surveying
+Traditional Land Surveying ✓
   NSPS
   Change vertical margin between lines
   
-UAV (Drone) and 3D Scanning
-  Change text color to go to background or get new background image
-  space text closer together
-  
-Clients
+Clients ✓
   Black background for Fred Smith
   remove key
-
-Contact Us
-  address/phone smaller text, half size
-  "O:  " before phone number, "O:" or just ":"?
