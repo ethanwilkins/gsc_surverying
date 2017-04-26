@@ -1,5 +1,4 @@
 <div class="dialog_modal" id="dialog_modal" align="center">
-  <%= link_to '<i class="fa fa-times fa-2x"></i>'.html_safe, :back, class: "top_right_link white_link" %>
   <div class="service_dialog" align="center">
     <% case @service %>
       <% when "1" %>
@@ -40,6 +39,7 @@
             background-repeat: no-repeat;
             background-size: cover;
             color: darkblue;
+            font-weight: bold;
           }
         </style>
         <h2 class="service_dialog_header" align="center">UAV (Drone) and 3D Scanning</h2>
