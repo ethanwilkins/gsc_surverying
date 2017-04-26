@@ -56,6 +56,8 @@
   width: 50%;
   text-align: left;
   padding-bottom: 12.5px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .projects_h2 {
@@ -255,13 +257,15 @@
 
 .links_container {
   margin: 0px auto;
-  width: 35%;
+  width: 60%;
   color: darkblue;
 }
 
 .links_link {
+  float: left;
+  width: 50%;
   color: rgb(66, 134, 244);
-  font-size: 20px;
+  font-size: 14px;
   display: block;
   padding-bottom: 15px;
 }
