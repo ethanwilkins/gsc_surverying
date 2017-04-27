@@ -257,13 +257,16 @@
 
 .links_container {
   margin: 0px auto;
-  width: 60%;
+  width: 50%;
   color: darkblue;
 }
 
-.links_link {
+.links_sub_container {
   float: left;
   width: 50%;
+}
+
+.links_link {
   color: rgb(66, 134, 244);
   font-size: 14px;
   display: block;
@@ -348,10 +351,14 @@
     padding-bottom: 25px;
   }
   .links_container {
-    width: 75%;
+    width: 90%;
   }
   .links_link {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .links_link_img {
+    width: 50px;
+    padding-right: 5px;
   }
   .about_us_body {
     width: 85%;

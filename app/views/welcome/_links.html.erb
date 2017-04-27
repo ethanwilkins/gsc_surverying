@@ -4,42 +4,46 @@
   </h2>
   
   <div class="links_container">
-    <%= link_to "http://ncbels.org", target: :_blank, class: :links_link do %>
-      <%= image_tag "links/ncboe.png", class: :links_link_img %>
-      NC Board of Examiners for Engineers and Land Surveyors (NCBELS)
-    <% end %>
-    <%= link_to "http://www.raleighnc.gov", target: :_blank, class: :links_link do %>
-      <%= image_tag "links/cor.png", class: :links_link_img %>
-      City of Raleigh
-    <% end %>
-    <%= link_to "http://www.wakegov.com", target: :_blank, class: :links_link do %>
-      <%= image_tag "links/wake.png", class: :links_link_img %>
-      Wake County
-    <% end %>
-    <%= link_to "http://www.ncfloodmaps.com", target: :_blank, class: :links_link do %>
-      <%= image_tag "links/ncseal.png", class: :links_link_img %>
-      NC Floodplain Mapping Program
-    <% end %>
-    <%= link_to "http://www.msc.fema.gov/portal/search?AddressQuery=raleigh%2C%20nc#searchresultsanchor",
-      target: :_blank, class: :links_link do %>
-      <%= image_tag "links/fema.png", class: :links_link_img %>
-      FEMA Flood Maps
-    <% end %>
-    <%= link_to "http://www.ncsurveyors.com", target: :_blank, class: :links_link do %>
-      <%= image_tag "links/ncss.png", class: :links_link_img %>
-      NC Society of Surveyors (NCSS)
-    <% end %>
-    <%= link_to "http://www.ncgs.state.nc.us", target: :_blank, class: :links_link do %>
-      <%= image_tag "links/geodectic.png", class: :links_link_img %>
-      NC Geodectic Surveyors
-    <% end %>
-    <%= link_to "http://www.gounmanned.com", target: :_blank, class: :links_link do %>
-      <%= image_tag "links/go.png", class: :links_link_img %>
-      Go Unmanned UAV Specialist
-    <% end %>
-    <%= link_to "http://www.benchmarksupply.com", target: :_blank, class: :links_link do %>
-      <%= image_tag "links/supply.png", class: :links_link_img %>
-      Benchmark Tool & Supply
-    <% end %>
+    <div class="links_sub_container" align="left">
+      <%= link_to "http://www.raleighnc.gov", target: :_blank, class: :links_link do %>
+        <%= image_tag "links/cor.png", class: :links_link_img %>
+        City of Raleigh
+      <% end %>
+      <%= link_to "http://www.wakegov.com", target: :_blank, class: :links_link do %>
+        <%= image_tag "links/wake.png", class: :links_link_img %>
+        Wake County
+      <% end %>
+      <%= link_to "http://www.ncfloodmaps.com", target: :_blank, class: :links_link do %>
+        <%= image_tag "links/ncseal.png", class: :links_link_img %>
+        NC Floodplain Mapping Program
+      <% end %>
+      <%= link_to "http://www.msc.fema.gov/portal/search?AddressQuery=raleigh%2C%20nc#searchresultsanchor",
+        target: :_blank, class: :links_link do %>
+        <%= image_tag "links/fema.png", class: :links_link_img %>
+        FEMA Flood Maps
+      <% end %>
+      <%= link_to "http://ncbels.org", target: :_blank, class: :links_link do %>
+        <%= image_tag "links/ncboe.png", class: :links_link_img %>
+        NC Board of Examiners for Engineers and Land Surveyors (NCBELS)
+      <% end %>
+    </div>
+    <div class="links_sub_container" align="left">
+      <%= link_to "http://www.ncsurveyors.com", target: :_blank, class: :links_link do %>
+        <%= image_tag "links/ncss.png", class: :links_link_img %>
+        NC Society of Surveyors (NCSS)
+      <% end %>
+      <%= link_to "http://www.ncgs.state.nc.us", target: :_blank, class: :links_link do %>
+        <%= image_tag "links/geodectic.png", class: :links_link_img %>
+        NC Geodectic Surveyors
+      <% end %>
+      <%= link_to "http://www.gounmanned.com", target: :_blank, class: :links_link do %>
+        <%= image_tag "links/go.png", class: :links_link_img %>
+        Go Unmanned UAV Specialist
+      <% end %>
+      <%= link_to "http://www.benchmarksupply.com", target: :_blank, class: :links_link do %>
+        <%= image_tag "links/supply.png", class: :links_link_img %>
+        Benchmark Tool & Supply
+      <% end %>
+    </div>
   </div><!-- links_container end -->
-</div><!-- section_part_links -->
+</div><!-- section_part end -->
