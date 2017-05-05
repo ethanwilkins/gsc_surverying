@@ -48,7 +48,7 @@
       <% end %>
       <%= link_to "Edit", edit_post_by_tag_path("links_geodectic") if admin? %>
       
-      <%= link_to post_img("links_go"), target: :_blank, class: "links_link links_link_go" do %>
+      <%= link_to post_url("links_go"), target: :_blank, class: "links_link links_link_go" do %>
         <%= image_tag post_img("links_go"), class: "links_link_img links_link_img_go" %>
         <%= post_text("links_go") %>
       <% end %>
