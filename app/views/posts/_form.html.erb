@@ -11,15 +11,24 @@
           You are creating new content
         <% end %>
       </p>
-      <p>
-        Title: <%= f.text_field :title, placeholder: "Title (optional)", class: :standard_text_field %>
-      </p>
+      
+		  <% if @post.section.eql? "projects" %>
+        <p>
+          Title: <%= f.text_field :title, placeholder: "Title (optional)", class: :standard_text_field %>
+        </p>
+      <% end %>
       
       <p>
         <%= f.text_area :body, placeholder: "Write your text here..." %>
       </p>
 	    
-		  Attach an image: <%= f.file_field :image %>
+	    <p>
+		    Attach an image: <%= f.file_field :image %>
+		  </p>
+      
+      <p>
+        <%= f.text_field :url, placeholder: "URL linking to elsewhere...", class: :standard_text_field %>
+      </p>
 		  
       <p>
         Tag: <%= f.text_field :tag, placeholder: "Tag text or image to a specific location...",

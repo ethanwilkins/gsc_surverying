@@ -3,26 +3,26 @@
   <div class="wrapper_contacts">
     <div class="company_emails">
       <div>
-        Greg S. Crowder, PLS
+        <%= post_text("contact_1") %> <%= link_to "Edit", edit_post_by_tag_path("contact_1") if admin? %>
       </div>
-      <%= link_to "greg@gscsurveying.com", "mailto:greg@gscsurveying.com", class: :email_link %>
+      <%= link_to post_url("contact_1"), "mailto:#{post_url("contact_1")}", class: :email_link %>
       <div>
-        Matthew M. Crawford, PLS
+        <%= post_text("contact_2") %> <%= link_to "Edit", edit_post_by_tag_path("contact_2") if admin? %>
       </div>
-      <%= link_to "matt@gscsurveying.com", "mailto:matt@gscsurveying.com", class: :email_link %>
+      <%= link_to post_url("contact_2"), "mailto:#{post_url("contact_2")}", class: :email_link %>
       <div>
-        Business Office
+        <%= post_text("contact_3") %> <%= link_to "Edit", edit_post_by_tag_path("contact_3") if admin? %>
       </div>
-      <%= link_to "accounting@gscsurveying.com", "mailto:accounting@gscsurveying.com", class: :email_link %>
+      <%= link_to post_url("contact_3"), "mailto:#{post_url("contact_3")}", class: :email_link %>
       <div class="office_details">
-        4070 Barrett Dr Raleigh, NC 27609
+        <%= post_text("office_address") %> <%= link_to "Edit", edit_post_by_tag_path("office_address") if admin? %>
         </br>
-        O:&#160&#160(919) 787-5805
+        O:&#160&#160<%= post_text("office_number") %> <%= link_to "Edit", edit_post_by_tag_path("office_number") if admin? %>
       </div>
     </div>
   </div>
   <%= render "welcome/contact_form" %>
   <div class="google_maps" align="center">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.714115263628!2d-78.63261004976452!3d35.831489329227814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac58ea71c6eb91%3A0x53bad23679f5c904!2s4070+Barrett+Dr%2C+Raleigh%2C+NC+27609!5e0!3m2!1sen!2sus!4v1490548283150" width="300" height="300" frameborder="0" style="border:0" allowfullscreen> </iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.714115263628!2d-78.63261004976452!3d35.831489329227814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89ac58ea71c6eb91%3A0x53bad23679f5c904!2s4072+Barrett+Dr%2C+Raleigh%2C+NC+27609!5e0!3m2!1sen!2sus!4v1490548283150" width="300" height="300" frameborder="0" style="border:0" allowfullscreen> </iframe>
   </div>
 </div>

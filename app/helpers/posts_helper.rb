@@ -13,6 +13,15 @@ module PostsHelper
     ]
   end
   
+  def post_url tag
+    post = Post.find_by_tag(tag)
+    if post and post.url.present?
+      post.url.html_safe
+    else
+      nil
+    end
+  end
+  
   def post_img tag
     post = Post.find_by_tag tag
     if post and post.image.present?
