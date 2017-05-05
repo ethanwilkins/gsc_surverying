@@ -3,7 +3,7 @@
 <div class="card">
   <%= link_to "Back (admin)", admin_path, class: :top_right_link %>
   <%= form_for(@post) do |f| %>
-    <div align="center">
+    <div class="posts_form" align="center">
       <p>
         <% if @editing %>
           You are editing content  
@@ -21,9 +21,15 @@
       <p>
         <%= f.text_area :body, placeholder: "Write your text here..." %>
       </p>
+      
+      <% if @post.image.present? %>
+        <p>
+          <%= image_tag @post.image, width: "95%" %>
+        </p>
+      <% end %>
 	    
 	    <p>
-		    Attach an image: <%= f.file_field :image %>
+		    Image: <%= f.file_field :image, style: "display: inline;" %>
 		  </p>
       
       <p>
