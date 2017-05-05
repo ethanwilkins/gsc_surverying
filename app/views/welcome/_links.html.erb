@@ -5,45 +5,60 @@
   
   <div class="links_container">
     <div class="links_sub_container" align="left">
-      <%= link_to "http://www.raleighnc.gov", target: :_blank, class: :links_link do %>
-        <%= image_tag "links/cor.png", class: :links_link_img %>
-        City of Raleigh
+      <%= link_to post_url("links_cor"), target: :_blank, class: :links_link do %>
+        <%= image_tag post_img("links_cor"), class: :links_link_img %>
+        <%= post_text("links_cor") %>
       <% end %>
-      <%= link_to "http://www.wakegov.com", target: :_blank, class: :links_link do %>
-        <%= image_tag "links/wake.png", class: :links_link_img %>
-        Wake County
+      <%= link_to "Edit", edit_post_by_tag_path("links_cor") if admin? %>
+      
+      <%= link_to post_url("links_wake"), target: :_blank, class: :links_link do %>
+        <%= image_tag post_img("links_wake"), class: :links_link_img %>
+        <%= post_text("links_wake") %>
       <% end %>
-      <%= link_to "http://www.ncfloodmaps.com", target: :_blank, class: :links_link do %>
-        <%= image_tag "links/ncseal.png", class: :links_link_img %>
-        NC Floodplain Mapping Program
+      <%= link_to "Edit", edit_post_by_tag_path("links_wake") if admin? %>
+      
+      <%= link_to post_url("links_ncfloodmaps"), target: :_blank, class: :links_link do %>
+        <%= image_tag post_img("links_ncfloodmaps"), class: :links_link_img %>
+        <%= post_text("links_ncfloodmaps") %>
       <% end %>
-      <%= link_to "http://www.msc.fema.gov/portal/search?AddressQuery=raleigh%2C%20nc#searchresultsanchor",
-        target: :_blank, class: :links_link do %>
-        <%= image_tag "links/fema.png", class: :links_link_img %>
-        FEMA Flood Maps
+      <%= link_to "Edit", edit_post_by_tag_path("links_ncfloodmaps") if admin? %>
+      
+      <%= link_to post_url("links_fema"), target: :_blank, class: :links_link do %>
+        <%= image_tag post_img("links_fema"), class: :links_link_img %>
+        <%= post_text("links_fema") %>
       <% end %>
-      <%= link_to "http://ncbels.org", target: :_blank, class: :links_link do %>
-        <%= image_tag "links/ncboe.png", class: :links_link_img %>
-        NC Board of Examiners for Engineers and Land Surveyors (NCBELS)
+      <%= link_to "Edit", edit_post_by_tag_path("links_fema") if admin? %>
+      
+      <%= link_to post_url("links_ncboe"), target: :_blank, class: :links_link do %>
+        <%= image_tag post_img("links_ncboe"), class: :links_link_img %>
+        <%= post_text("links_ncboe") %>
       <% end %>
+      <%= link_to "Edit", edit_post_by_tag_path("links_ncboe") if admin? %>
     </div>
     <div class="links_sub_container" align="left">
-      <%= link_to "http://www.ncsurveyors.com", target: :_blank, class: :links_link do %>
-        <%= image_tag "links/ncss.png", class: :links_link_img %>
-        NC Society of Surveyors (NCSS)
+      <%= link_to post_url("links_ncss"), target: :_blank, class: :links_link do %>
+        <%= image_tag post_img("links_ncss"), class: :links_link_img %>
+        <%= post_text("links_ncss") %>
       <% end %>
-      <%= link_to "http://www.ncgs.state.nc.us", target: :_blank, class: :links_link do %>
-        <%= image_tag "links/geodectic.png", class: :links_link_img %>
-        NC Geodectic Surveyors
+      <%= link_to "Edit", edit_post_by_tag_path("links_ncss") if admin? %>
+      
+      <%= link_to post_url("links_geodectic"), target: :_blank, class: :links_link do %>
+        <%= image_tag post_img("links_geodectic"), class: :links_link_img %>
+        <%= post_text("links_geodectic") %>
       <% end %>
-      <%= link_to "http://www.gounmanned.com", target: :_blank, class: "links_link links_link_go" do %>
-        <%= image_tag "links/go.png", class: "links_link_img links_link_img_go" %>
-        Go Unmanned UAV Specialist
+      <%= link_to "Edit", edit_post_by_tag_path("links_geodectic") if admin? %>
+      
+      <%= link_to post_img("links_go"), target: :_blank, class: "links_link links_link_go" do %>
+        <%= image_tag post_img("links_go"), class: "links_link_img links_link_img_go" %>
+        <%= post_text("links_go") %>
       <% end %>
-      <%= link_to "http://www.benchmarksupply.com", target: :_blank, class: "links_link links_link_go" do %>
-        <%= image_tag "links/supply.png", class: :links_link_img %>
-        Benchmark Tool & Supply
+      <%= link_to "Edit", edit_post_by_tag_path("links_go") if admin? %>
+      
+      <%= link_to post_url("links_supply"), target: :_blank, class: "links_link links_link_go" do %>
+        <%= image_tag post_img("links_supply"), class: :links_link_img %>
+        <%= post_text("links_supply") %>
       <% end %>
+      <%= link_to "Edit", edit_post_by_tag_path("links_supply") if admin? %>
     </div>
   </div><!-- links_container end -->
 </div><!-- section_part end -->
