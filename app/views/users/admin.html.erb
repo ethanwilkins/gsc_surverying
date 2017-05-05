@@ -3,7 +3,8 @@
 
   <div class="card" align="center">
     <%= link_to "New content", new_post_path, class: :top_right_link %>
-    <%= link_to "Log out", sessions_destroy_path, method: :delete, class: :bottom_left_link %>
+    <%= link_to "Log out", sessions_destroy_path, method: :delete, class: :bottom_left_link,
+    	  data: { confirm: "Are you sure?" } %>
     <p>Admin Section (<%= current_user.name %>)</p>
     
     <p>
