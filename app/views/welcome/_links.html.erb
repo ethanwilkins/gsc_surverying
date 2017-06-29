@@ -34,6 +34,12 @@
         <%= post_text("links_ncboe") %>
       <% end %>
       <%= link_to "Edit", edit_post_by_tag_path("links_ncboe") if admin? %>
+      
+      <%= link_to post_url("links_dpor"), target: :_blank, class: :links_link do %>
+        <%= image_tag post_img("links_dpor"), class: :links_link_img %>
+        <%= post_text("links_dpor") %>
+      <% end %>
+      <%= link_to "Edit", edit_post_by_tag_path("links_ncboe") if admin? %>
     </div>
     <div class="links_sub_container" align="left">
       <%= link_to post_url("links_ncss"), target: :_blank, class: :links_link do %>
@@ -59,6 +65,12 @@
         <%= post_text("links_supply") %>
       <% end %>
       <%= link_to "Edit", edit_post_by_tag_path("links_supply") if admin? %>
+      
+      <%= link_to post_url("links_vas"), target: :_blank, class: "links_link" do %>
+        <%= image_tag post_img("links_vas"), class: :links_link_img %>
+        <%= post_text("links_vas") %>
+      <% end %>
+      <%= link_to "Edit", edit_post_by_tag_path("links_vas") if admin? %>
     </div>
   </div><!-- links_container end -->
 </div><!-- section_part end -->
