@@ -1,4 +1,7 @@
 class WelcomeController < ApplicationController
+  def close
+  end
+  
   def index
     @you_are_home = true
     # cookies[:carousel_index] = 0

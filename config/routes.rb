@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get 'services_dialog/:service', to: 'welcome#services_dialog', as: 'services_dialog'
   get 'close_dialog', to: 'welcome#close_dialog', as: 'close_dialog'
   get 'show_project_image/:id', to: 'welcome#show_project_image', as: 'show_project_image'
+  get 'close', to: 'welcome#close', as: 'close'
   
   # users
   get 'admin', to: 'users#admin', as: 'admin'
