@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_action :security, only: [:new, :create]
+  
   def admin
     @posts = Post.where.not(tag: nil).reverse
     redirect_to root_url unless admin?
@@ -39,6 +41,12 @@ class UsersController < ApplicationController
   end
   
   private
+  
+  def security
+    if User.all.size > 3
+      redirect_to '/404'
+    end
+  end
   
   # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
