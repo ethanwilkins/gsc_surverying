@@ -1,6 +1,6 @@
 <div class="dialog_modal" id="dialog_modal">
+  <%= link_to '<i class="fa fa-times fa-2x"></i>'.html_safe, close_path, remote: true, class: "top_right_link white_link" %>
   <div class="project_card" id="project_card" align="center">
-    <%= link_to '<i class="fa fa-times fa-2x"></i>'.html_safe, close_path, remote: true, class: "top_right_link white_link" %>
     <%= link_to "Edit project", edit_post_by_tag_path(@project.tag), class: :top_left_link if admin? %>
     <p class="project_title">
       <%= @project.body %>
