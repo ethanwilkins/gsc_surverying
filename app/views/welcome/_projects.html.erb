@@ -3,7 +3,7 @@
   <div class="projects_container">
     <% for project in @projects %>
       
-      <%= link_to projects_dialog_path(project.tag), style: "color:black;" do %>
+      <%= link_to projects_dialog_path(project.tag), target: "_blank", style: "color:black;" do %>
         <div class="project_container">
           <%= project.body %>
           <%= link_to "Edit", edit_post_by_tag_path(project.tag) if admin? %>
