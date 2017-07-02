@@ -1,4 +1,6 @@
 <div class="dialog_modal" id="dialog_modal">
+  <%= link_to '<i class="fa fa-times fa-2x"></i>'.html_safe, close_path,
+    remote: true, class: "top_right_link white_link" %>
   <div class="card_spacer"></div>
   <div class="card" align="center">
     <%= link_to '<i class="fa fa-times"></i>'.html_safe, projects_dialog_path(@image.project), class: :top_right_link %>
