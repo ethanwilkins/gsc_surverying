@@ -28,7 +28,7 @@ Rails.application.routes.draw do
   #   get 'products/:id' => 'catalog#view'
   
   # sessions
-  get 'sessions/new'
+  get 'login', to: 'sessions#new', as: 'sessions_new'
   post 'sessions/create', as: 'sessions'
   delete 'sessions/destroy'
   delete 'sessions/destroy_all_other_sessions', as: 'destroy_all_other_sessions'
