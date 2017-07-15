@@ -23,12 +23,14 @@ class PostsController < ApplicationController
       @post = Post.find_by_id params[:id]
     elsif params[:tag]
       @post = Post.where(tag: params[:tag]).last
-      @tag = @post.tag
     end
     if params[:tag] and not @post
       @post = Post.new body: "[placeholder text]", tag: params[:tag]
       @post.project = params[:project] if params[:project]
       @post.section = params[:section] if params[:section]
+    # for showing certain field in form
+    elsif @post and @post.tag
+      @tag = @post.tag      
     end
     @editing = true
   end
