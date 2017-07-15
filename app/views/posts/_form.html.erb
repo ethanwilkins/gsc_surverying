@@ -24,17 +24,19 @@
         </p>
       <% end %>
       
-      <% if @post.image.present? %>
+      <% if @post.image.present? and not (@tag and @tag.include? "about_us_p") %>
         <p>
           <%= image_tag @post.image, width: "95%" %>
         </p>
       <% end %>
 	    
-	    <p>
-		    Image: <%= f.file_field :image, style: "display: inline;" %>
-		  </p>
+	    <% unless @tag and @tag.include? "about_us_p" %>
+	      <p>
+		      Image: <%= f.file_field :image, style: "display: inline;" %>
+		    </p>
+		  <% end %>
       
-      <% unless @tag and @tag.include? "carousel_img" %>
+      <% unless @tag and (@tag.include? "carousel_img" or @tag.include? "about_us_p") %>
         <p>
           URL: <%= f.text_field :url, placeholder: "URL linking to elsewhere...", class: :standard_text_field %>
         </p>
