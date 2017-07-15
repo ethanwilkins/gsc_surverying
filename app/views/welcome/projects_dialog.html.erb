@@ -11,7 +11,7 @@
           <%= image_tag image.image, class: :project_img %>
         <% end %>
         <%= link_to "Edit", edit_post_path(image) if admin? %>
-        <%= link_to "Delete", destroy_post_path(image) if admin? %>
+        <%= link_to "Delete", destroy_post_path(image), data: { confirm: "Are you sure?" } if admin? %>
       </div>
     <% end %>
     <% if @project_images.empty? %>
