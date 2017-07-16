@@ -29,7 +29,7 @@
         </p>
       <% end %>
       
-      <% if @editing and @tag.include? "project_" %>
+      <% if @editing and @tag and @tag.include? "project_" %>
         <p>
           <%= link_to "Add another image",
       edit_post_by_tag_path(tag: "#{@project.tag + '_img' + (Post.all.size + 1).to_s}", project: @project.tag) %>
@@ -55,7 +55,7 @@
           </p>
         <% end %>
 		    
-		    <% unless @editing and @tag.include? "clients_" %>
+		    <% unless @editing and @tag and @tag.include? "clients_" %>
           <p>
             Tag: <%= f.text_field :tag, placeholder: "Tag text or image to a specific location...",
               class: :standard_text_field %>
