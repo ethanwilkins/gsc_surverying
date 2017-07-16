@@ -32,7 +32,7 @@ class PostsController < ApplicationController
     elsif @post and @post.tag
       @tag = @post.tag      
     end
-    @editing = true
+    @editing = true unless @post.new_record?
   end
   
   def update
