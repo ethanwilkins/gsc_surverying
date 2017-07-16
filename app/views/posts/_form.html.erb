@@ -32,7 +32,7 @@
       <% if @editing and @tag and @tag.include? "project_" %>
         <p>
           <%= link_to "Add another image",
-      edit_post_by_tag_path(tag: "#{@project.tag + '_img' + (Post.all.size + 1).to_s}", project: @project.tag) %>
+      edit_post_by_tag_path(tag: "#{@post.tag + '_img' + (Post.all.size + 1).to_s}", project: @post.tag) %>
         </p>
       <% end %>
       
