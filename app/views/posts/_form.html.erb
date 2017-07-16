@@ -23,7 +23,7 @@
         </p>
       <% end %>
       
-      <% unless @tag and @tag.include? "carousel_img" %>
+      <% unless @tag and (@tag.include? "carousel_img" or @tag.include? "clients_") %>
         <p>
           <%= f.text_area :body, placeholder: "Write your text here..." %>
         </p>
@@ -46,28 +46,30 @@
           URL: <%= f.text_field :url, placeholder: "URL linking to elsewhere...", class: :standard_text_field %>
         </p>
 		    
-        <p>
-          Tag: <%= f.text_field :tag, placeholder: "Tag text or image to a specific location...",
-            class: :standard_text_field %>
-        </p>
-		    
-		    <% unless @post.section.eql? "projects" %>
+		    <% unless @editing and @tag.include? "clients_" %>
           <p>
-            Project: <%= f.text_field :project, placeholder: "Tag content for a particular project...",
+            Tag: <%= f.text_field :tag, placeholder: "Tag text or image to a specific location...",
               class: :standard_text_field %>
           </p>
-        <% end %>
-		    
-		    <% unless @post.project.present? %>
-          <p>
-	          Section: 
-	          <% if @post.section.eql? "projects" %>
-	            Projects
-	            <%= hidden_field_tag :section, "projects" %>
-	          <% else %>
-	            <%= select_tag :section, options_for_select(section_options) %>
-	          <% end %>
-          </p>
+		      
+		      <% unless @post.section.eql? "projects" %>
+            <p>
+              Project: <%= f.text_field :project, placeholder: "Tag content for a particular project...",
+                class: :standard_text_field %>
+            </p>
+          <% end %>
+		      
+		      <% unless @post.project.present? %>
+            <p>
+	            Section: 
+	            <% if @post.section.eql? "projects" %>
+	              Projects
+	              <%= hidden_field_tag :section, "projects" %>
+	            <% else %>
+	              <%= select_tag :section, options_for_select(section_options) %>
+	            <% end %>
+            </p>
+          <% end %>
         <% end %>
       <% end %>
 		  
