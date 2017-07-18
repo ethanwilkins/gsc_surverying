@@ -4,7 +4,7 @@
   <%= link_to "Back (admin)", admin_path, class: :top_right_link %>
   
   <% if @editing and @post.tag.include? "project_" %>
-    <%= link_to "Delete project", destroy_post_path(@post), data: { confirm: "Are you sure?" }, class: :top_left_link %>
+    <%= link_to "Delete project", destroy_post_path(@post), method: :delete, data: { confirm: "Are you sure?" }, class: :top_left_link %>
   <% end %>
   
   <%= form_for(@post) do |f| %>
