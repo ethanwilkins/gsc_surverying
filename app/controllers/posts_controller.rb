@@ -31,9 +31,8 @@ class PostsController < ApplicationController
     # for showing certain field in form
     elsif @post and @post.tag
       @tag = @post.tag
-    elsif params[:tag]
-      @tag = params[:tag]
     end
+    @tag = params[:tag] if params[:tag] and @tag.nil or !defined?(@tag)
     @editing = true unless @post.new_record?
   end
   
