@@ -24,14 +24,13 @@ class PostsController < ApplicationController
     elsif params[:tag]
       @post = Post.where(tag: params[:tag]).last
     end
+    # if starting new project
     if params[:tag] and not @post
       @post = Post.new body: "[placeholder text]", tag: params[:tag]
       @post.project = params[:project] if params[:project]
       @post.section = params[:section] if params[:section]
-    # for showing certain field in form
-    elsif @post and @post.tag
-      @tag = @post.tag
     end
+    @tag = @post.tag
     @editing = true unless @post.new_record?
   end
   
