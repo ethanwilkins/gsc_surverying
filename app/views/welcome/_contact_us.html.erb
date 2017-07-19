@@ -11,7 +11,7 @@
     
       <% if admin? %>
         <div>
-          <%= link_to "Add a project",
+          <%= link_to "Add a contact",
             edit_post_by_tag_path(tag: "#{'contact_' + (Post.where(section: :contacts).size + 1).to_s}", section: :contacts) %>
         </div>
       <% end %>

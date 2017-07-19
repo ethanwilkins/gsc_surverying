@@ -23,7 +23,7 @@
         </p>
       <% end %>
       
-      <% unless @tag and (@tag.include? "carousel_img" or @tag.include? "clients_") %>
+      <% unless @tag and (@tag.include? "carousel_img" or @tag.include? "clients_" or @tag.include? "contact_") %>
         <p>
           <%= f.text_area :body, placeholder: "Write your text here..." %>
         </p>
@@ -48,14 +48,14 @@
         </p>
       <% end %>
 	    
-	    <% unless @tag and (@tag.include? "about_us_p" or @tag.include? "project_") %>
+	    <% unless @tag and (@tag.include? "about_us_p" or @tag.include? "project_" or @tag.include? "contact_") %>
 	      <p>
 		      Image: <%= f.file_field :image, style: "display: inline;" %>
 		    </p>
 		  <% end %>
       
       <% unless @editing and @tag and (@tag.include? "carousel_img" or @tag.include? "about_us_p") %>
-        <% unless @tag and @tag.include? "project_" %>
+        <% unless @tag and (@tag.include? "project_" or @tag.include? "contact_") %>
           <p>
             URL: <%= f.text_field :url, placeholder: "URL linking to elsewhere...", class: :standard_text_field %>
           </p>
@@ -80,6 +80,9 @@
 	            <% if @post.section.eql? "projects" %>
 	              Projects
 	              <%= hidden_field_tag :section, "projects" %>
+	            <% elsif @post.section.eq? "contacts" %>
+	              Contacts
+	              <%= hidden_field_tag :section, "contacts" %>
 	            <% else %>
 	              <%= select_tag :section, options_for_select(section_options) %>
 	            <% end %>
