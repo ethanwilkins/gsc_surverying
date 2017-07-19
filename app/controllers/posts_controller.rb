@@ -32,7 +32,6 @@ class PostsController < ApplicationController
     elsif @post and @post.tag
       @tag = @post.tag
     end
-    @tag = params[:tag] if params[:tag] and @tag.nil or !defined?(@tag)
     @editing = true unless @post.new_record?
   end
   
