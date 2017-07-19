@@ -10,11 +10,10 @@
       <% end %>
     
       <% if admin? %>
-        </br>
-        <p align="center">
+        <div>
           <%= link_to "Add a project",
             edit_post_by_tag_path(tag: "#{'contact_' + (Post.where(section: :contacts).size + 1).to_s}", section: :contacts) %>
-        </p>
+        </div>
       <% end %>
     
       <div class="office_details">
