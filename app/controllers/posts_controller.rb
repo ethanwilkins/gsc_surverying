@@ -30,7 +30,9 @@ class PostsController < ApplicationController
       @post.section = params[:section] if params[:section]
     # for showing certain field in form
     elsif @post and @post.tag
-      @tag = @post.tag      
+      @tag = @post.tag
+    elsif params[:tag]
+      @tag = params[:tag]
     end
     @editing = true unless @post.new_record?
   end

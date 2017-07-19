@@ -36,6 +36,12 @@
         </p>
       <% end %>
       
+      <% if not @editing and @tag.include? "project_" %>
+        <p>
+          You can add images after the projects created.
+        </p>
+      <% end %>
+      
       <% if @post.image.present? and not (@tag and @tag.include? "about_us_p") %>
         <p>
           <%= image_tag @post.image, width: "95%" %>
