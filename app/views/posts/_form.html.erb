@@ -36,7 +36,7 @@
         </p>
       <% end %>
       
-      <% if not @editing and @tag.include? "project_" %>
+      <% if not @editing and @tag and @tag.include? "project_" %>
         <p>
           You can add images after the projects created.
         </p>
