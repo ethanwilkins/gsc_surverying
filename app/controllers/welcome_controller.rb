@@ -7,6 +7,7 @@ class WelcomeController < ApplicationController
     # cookies[:carousel_index] = 0
     # projects to be listen in projects section
     @projects = Post.where(section: "projects")
+    @contacts = Post.where(section: "contacts")
   end
   
   def show_project_image

@@ -2,18 +2,12 @@
   <h2 class="contact_us_h2">Contact Us</h2>
   <div class="wrapper_contacts">
     <div class="company_emails">
-      <div>
-        <%= post_text("contact_1") %> <%= link_to "Edit", edit_post_by_tag_path("contact_1") if admin? %>
-      </div>
-      <%= link_to post_url("contact_1"), "mailto:#{post_url("contact_1")}", class: :email_link %>
-      <div>
-        <%= post_text("contact_2") %> <%= link_to "Edit", edit_post_by_tag_path("contact_2") if admin? %>
-      </div>
-      <%= link_to post_url("contact_2"), "mailto:#{post_url("contact_2")}", class: :email_link %>
-      <div>
-        <%= post_text("contact_3") %> <%= link_to "Edit", edit_post_by_tag_path("contact_3") if admin? %>
-      </div>
-      <%= link_to post_url("contact_3"), "mailto:#{post_url("contact_3")}", class: :email_link %>
+      <% for contact in @contacts %>
+        <div>
+          <%= post_text(contact.tag) %> <%= link_to "Edit", edit_post_by_tag_path(contact.tag) if admin? %>
+        </div>
+        <%= link_to post_url(contact.tag), "mailto:#{post_url(contact.tag)}", class: :email_link %>
+      <% end %>
       <div class="office_details">
         <%= post_text("office_address") %> <%= link_to "Edit", edit_post_by_tag_path("office_address") if admin? %>
         </br>
