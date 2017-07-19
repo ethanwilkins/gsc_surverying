@@ -80,7 +80,7 @@
 	            <% if @post.section.eql? "projects" %>
 	              Projects
 	              <%= hidden_field_tag :section, "projects" %>
-	            <% elsif @post.section.eq? "contacts" %>
+	            <% elsif @post.section.eql? "contacts" %>
 	              Contacts
 	              <%= hidden_field_tag :section, "contacts" %>
 	            <% else %>
