@@ -5,7 +5,7 @@
       <% when "1" %>
         <style>
           .dialog_modal {
-            background-image: url("/images/backgrounds/red.jpg");
+            background-image: url("<%= post_img("services_img_1") %>");
             background-repeat: no-repeat;
             background-size: cover;
           }
@@ -16,10 +16,13 @@
             <%= service %>
           </div>
         <% end %>
+        <div>
+          <%= link_to "Edit background", edit_post_by_tag_path("services_img_1") if admin? %>
+        </div>
       <% when "2" %>
         <style>
           .dialog_modal {
-            background-image: url("/images/survey_backgroundGS.jpg");
+            background-image: url("<%= post_img("services_img_2") %>");
             background-repeat: no-repeat;
             background-size: cover;
           }
@@ -33,6 +36,9 @@
             <%= service %>
           </div>
         <% end %>
+        <div>
+          <%= link_to "Edit background", edit_post_by_tag_path("services_img_2") if admin? %>
+        </div>
       <% when "3" %>
         <style>
           .dialog_modal {
@@ -50,12 +56,12 @@
           </div>
         <% end %>
         <div>
-          <%= link_to "Edit", edit_post_by_tag_path("services_img_3") if admin? %>
+          <%= link_to "Edit background", edit_post_by_tag_path("services_img_3") if admin? %>
         </div>
       <% when "4" %>
         <style>
           .dialog_modal {
-            background-image: url("/images/uav/uav_4.jpg");
+            background-image: url("<%= post_img("services_img_4") %>");
             background-repeat: no-repeat;
             background-size: cover;
           }
@@ -67,6 +73,9 @@
             <%= service %>
           </div>
         <% end %>
+        <div>
+          <%= link_to "Edit background", edit_post_by_tag_path("services_img_4") if admin? %>
+        </div>
     <% end %>
   </div>
 </div>
