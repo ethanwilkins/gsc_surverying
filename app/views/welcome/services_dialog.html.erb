@@ -36,11 +36,12 @@
       <% when "3" %>
         <style>
           .dialog_modal {
-            background-image: url("/images/uav/uav_5.jpg");
+            background-image: url("<%= post_img("services_img_3") %>");
             background-repeat: no-repeat;
             background-size: cover;
           }
         </style>
+        <%= link_to "Edit", edit_post_by_tag_path("services_img_3"), class: :bottom_left_link if admin? %>
         <h2 class="service_dialog_header" align="center">3D-Laser Scanning</h2>
         <% ["Topographic", "Aerial Imaging", "Structure Surveys & Inspections",
           "Earthwork, landfill, stock pile volume quantities", "Highways & Bridges", "Solar Farms", "Infrared Imaging",
