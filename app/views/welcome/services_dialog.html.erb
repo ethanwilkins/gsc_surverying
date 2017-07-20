@@ -41,13 +41,15 @@
             background-size: cover;
           }
         </style>
-        <%= link_to "Edit", edit_post_by_tag_path("services_img_3"), class: :bottom_left_link if admin? %>
         <h2 class="service_dialog_header" align="center">3D-Laser Scanning</h2>
         <% ["Topographic", "Aerial Imaging", "Structure Surveys & Inspections",
           "Earthwork, landfill, stock pile volume quantities", "Highways & Bridges", "Solar Farms", "Infrared Imaging",
           "Forensic & Accident Sites", "Agriculture Studies"].each do |service| %>
           <div class="service_dialog_txt">
             <%= service %>
+          </div>
+          <div>
+            <%= link_to "Edit", edit_post_by_tag_path("services_img_3") if admin? %>
           </div>
         <% end %>
       <% when "4" %>
