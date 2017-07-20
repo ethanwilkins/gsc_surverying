@@ -48,10 +48,10 @@
           <div class="service_dialog_txt">
             <%= service %>
           </div>
-          <div>
-            <%= link_to "Edit", edit_post_by_tag_path("services_img_3") if admin? %>
-          </div>
         <% end %>
+        <div>
+          <%= link_to "Edit", edit_post_by_tag_path("services_img_3") if admin? %>
+        </div>
       <% when "4" %>
         <style>
           .dialog_modal {
